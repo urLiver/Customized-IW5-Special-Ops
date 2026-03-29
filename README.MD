@@ -77,3 +77,4 @@ Small Project to bring some more fun and longevity into the IW5 Special Ops Game
     - [x] LMGs 7000 -> 8500
   - [ ] Update Survival Armories Tabel so anything got a proper level to be unlocked at
   - [ ] Make Self Revive only Buyable 3 Times
+  - [ ] Remove Pause from Menu or Turn Prestige Textures into not animated

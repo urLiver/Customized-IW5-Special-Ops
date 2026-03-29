@@ -2,6 +2,45 @@
 
 >name,ui
 
+image,rank_prestige_1
+image,rank_prestige_2
+image,rank_prestige_3
+image,rank_prestige_4
+image,rank_prestige_5
+image,rank_prestige_6
+image,rank_prestige_7
+image,rank_prestige_8
+image,rank_prestige_9
+image,rank_prestige_10
+image,rank_prestige_11
+image,rank_prestige_12
+image,rank_prestige_13
+image,rank_prestige_14
+image,rank_prestige_15
+image,rank_prestige_16
+image,rank_prestige_17
+image,rank_prestige_18
+image,rank_prestige_19
+material,rank_prestige_1
+material,rank_prestige_2
+material,rank_prestige_3
+material,rank_prestige_4
+material,rank_prestige_5
+material,rank_prestige_6
+material,rank_prestige_7
+material,rank_prestige_8
+material,rank_prestige_9
+material,rank_prestige_10
+material,rank_prestige_11
+material,rank_prestige_12
+material,rank_prestige_13
+material,rank_prestige_14
+material,rank_prestige_15
+material,rank_prestige_16
+material,rank_prestige_17
+material,rank_prestige_18
+material,rank_prestige_19
+
 menulist,ui/custom_menus.txt
 
 include,ui
