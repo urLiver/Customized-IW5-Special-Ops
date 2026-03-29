@@ -14,7 +14,7 @@ Small Project to bring some more fun and longevity into the IW5 Special Ops Game
 ## How to Install
 Make a backup of your english and main folder from you Game
 Download this File ( Uploaded on Mediafire due to Github Max File Size Limit ) [iw_02.iwd](https://www.mediafire.com/file/d6vojn8tsjx24p6/iw_02.iwd/file) and Place it in your main folder.
-Copy any content of the zone_out folder into the english folder
+Copy any content of the zone_out subfolders into the english folder
 Start the Game
 
 ## How to Compile
