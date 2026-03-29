@@ -1,0 +1,32 @@
+#include "ui_mp/_style.inc"
+
+#define CURRENT_MENU "survival_armory_weapon_mpistol"
+#define OPTION_COUNT 5
+
+#define MENU_POS ( 240 - ( 24 * ( OPTION_COUNT + 1 ) + 22 ) / 2 )
+
+#define Shop_BuyButton( current_idx, armory_idx, anim_name ) \
+    _Shop_BuyWeaponButton( ( MENU_POS + 36 ), CURRENT_MENU, current_idx, armory_idx, anim_name );
+
+#define Shop_Begin( display_text ) \
+    _Shop_Begin( MENU_POS, CURRENT_MENU, display_text ); 
+
+#define Shop_End( current_idx ) \
+    _Shop_End( ( MENU_POS + 36 ), CURRENT_MENU, current_idx );
+
+#define Shop_SubFrame \
+    _Shop_SubFrame( CURRENT_MENU );
+
+{
+    menuDef
+    {
+        Shop_SubFrame;
+        Shop_Begin( "@SO_SURVIVAL_ARMORY_WEAPON_MPISTOL_GROUP" );
+        Shop_BuyButton( 0, 20, "weapons_mpistols_0" );
+        Shop_BuyButton( 1, 21, "weapons_mpistols_1" );
+        Shop_BuyButton( 2, 22, "weapons_mpistols_2" );
+        Shop_BuyButton( 3, 23, "weapons_mpistols_3" );
+        Shop_BuyButton( 4, 24, "weapons_mpistols_4" );
+        Shop_End( 5 );
+    }
+}

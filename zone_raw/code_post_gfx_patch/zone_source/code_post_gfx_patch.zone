@@ -1,0 +1,7 @@
+>game,IW5
+
+>name,code_post_gfx
+
+stringtable,sp/ranktable.csv
+
+include,code_post_gfx

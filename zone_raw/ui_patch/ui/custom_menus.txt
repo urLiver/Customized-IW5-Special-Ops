@@ -1,0 +1,6 @@
+{
+    loadMenu { "ui/main_selection.menu" }
+    loadMenu { "ui/main_specops.menu" }
+    loadMenu { "ui/main_campaign.menu" }
+    loadMenu { "ui/popup_modechoice.menu" }
+}

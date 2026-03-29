@@ -1,0 +1,7 @@
+>game,IW5
+
+>name,ui
+
+menulist,ui/custom_menus.txt
+
+include,ui

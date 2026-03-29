@@ -1,0 +1,15 @@
+>game,IW5
+
+>name,patch_survival
+
+material,,navbar_edge
+material,,navbar_tick
+
+menulist,ui_mp/custom_menus.txt
+
+scriptfile,1571
+
+ignore,common
+
+include,weapon_list
+include,patch_survival

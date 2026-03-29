@@ -1,0 +1,1183 @@
+// Dumped from fastfile "ui".
+// In their original format the strings might have been separated in multiple files.
+VERSION             "1"
+CONFIG              "C:/trees/cod3/cod3/bin/StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           KILLSTREAKS_A10_SUPPORT
+LANG_ENGLISH        "A-10 Support"
+
+REFERENCE           KILLSTREAKS_A10_SUPPORT_DESC
+LANG_ENGLISH        "Call in an A-10 Warthog strafe run."
+
+REFERENCE           KILLSTREAKS_AA_MISSILE
+LANG_ENGLISH        "Anti-Air Missile"
+
+REFERENCE           KILLSTREAKS_AA_MISSILE_DESC
+LANG_ENGLISH        "Control an anti-air missile to shoot aircraft down."
+
+REFERENCE           KILLSTREAKS_AASTRIKE
+LANG_ENGLISH        "Air Superiority"
+
+REFERENCE           KILLSTREAKS_AASTRIKE_DESC
+LANG_ENGLISH        "Destroy enemy aircraft."
+
+REFERENCE           KILLSTREAKS_AC130
+LANG_ENGLISH        "AC-130"
+
+REFERENCE           KILLSTREAKS_AC130_DESC
+LANG_ENGLISH        "Be the gunner of an AC-130."
+
+REFERENCE           KILLSTREAKS_AIRDROP
+LANG_ENGLISH        "Care Package"
+
+REFERENCE           KILLSTREAKS_AIRDROP_DESC
+LANG_ENGLISH        "Airdrop a random killstreak."
+
+REFERENCE           KILLSTREAKS_AIRDROP_JUGGERNAUT
+LANG_ENGLISH        "Juggernaut"
+
+REFERENCE           KILLSTREAKS_AIRDROP_JUGGERNAUT_DESC
+LANG_ENGLISH        "Receive advanced armor via Care Package."
+
+REFERENCE           KILLSTREAKS_AIRDROP_JUGGERNAUT_GL
+LANG_ENGLISH        "Juggernaut GL"
+
+REFERENCE           KILLSTREAKS_AIRDROP_JUGGERNAUT_GL_DESC
+LANG_ENGLISH        "Receive advanced armor via Care Package."
+
+REFERENCE           KILLSTREAKS_AIRDROP_JUGGERNAUT_RECON
+LANG_ENGLISH        "Juggernaut Recon"
+
+REFERENCE           KILLSTREAKS_AIRDROP_JUGGERNAUT_RECON_DESC
+LANG_ENGLISH        "Receive advanced armor via Care Package."
+
+REFERENCE           KILLSTREAKS_AIRDROP_MEGA
+LANG_ENGLISH        "Emergency Airdrop"
+
+REFERENCE           KILLSTREAKS_AIRDROP_MEGA_DESC
+LANG_ENGLISH        "Airdrop 4 random killstreaks or ammo."
+
+REFERENCE           KILLSTREAKS_AIRDROP_PREDATOR
+LANG_ENGLISH        "Care Package (Predator)"
+
+REFERENCE           KILLSTREAKS_AIRDROP_PREDATOR_DESC
+LANG_ENGLISH        "Drops a single use predator missile."
+
+REFERENCE           KILLSTREAKS_AIRDROP_REMOTE_TANK
+LANG_ENGLISH        "Assault Drone"
+
+REFERENCE           KILLSTREAKS_AIRDROP_REMOTE_TANK_DESC
+LANG_ENGLISH        "Airdrop an Assault Drone."
+
+REFERENCE           KILLSTREAKS_AIRDROP_SENTRY
+LANG_ENGLISH        "Sentry Gun"
+
+REFERENCE           KILLSTREAKS_AIRDROP_SENTRY_DESC
+LANG_ENGLISH        "Airdrop a placeable Sentry Gun."
+
+REFERENCE           KILLSTREAKS_AIRDROP_TEAM_AMMO
+LANG_ENGLISH        "Airdrop Team Ammo Resupply"
+
+REFERENCE           KILLSTREAKS_AIRDROP_TEAM_AMMO_DESC
+LANG_ENGLISH        "Resupply team ammo via Care Package."
+
+REFERENCE           KILLSTREAKS_AIRDROP_TRAP
+LANG_ENGLISH        "Airdrop Trap"
+
+REFERENCE           KILLSTREAKS_AIRDROP_TRAP_DESC
+LANG_ENGLISH        "Kill enemies with a booby-trapped airdrop crate."
+
+REFERENCE           KILLSTREAKS_AIRDROP_TROPHY
+LANG_ENGLISH        "Airdrop Personal Trophy."
+
+REFERENCE           KILLSTREAKS_AIRSTRIKE
+LANG_ENGLISH        "Airstrike"
+
+REFERENCE           KILLSTREAKS_AIRSTRIKE_DESC
+LANG_ENGLISH        "Call in an air strike on selected position."
+
+REFERENCE           KILLSTREAKS_AMMO
+LANG_ENGLISH        "Ammo Pickup"
+
+REFERENCE           KILLSTREAKS_AMMO_DESC
+LANG_ENGLISH        "Receive Ammo Pickup."
+
+REFERENCE           KILLSTREAKS_COUNTER_UAV
+LANG_ENGLISH        "Counter-UAV"
+
+REFERENCE           KILLSTREAKS_COUNTER_UAV_DESC
+LANG_ENGLISH        "Temporarily disables enemy radar."
+
+REFERENCE           KILLSTREAKS_DEPLOYABLE_AMMO
+LANG_ENGLISH        "Ammo Box"
+
+REFERENCE           KILLSTREAKS_DEPLOYABLE_AMMO_DESC
+LANG_ENGLISH        "Deploy an ammo box for your team."
+
+REFERENCE           KILLSTREAKS_DEPLOYABLE_EXP_AMMO
+LANG_ENGLISH        "Explosive Ammo Box"
+
+REFERENCE           KILLSTREAKS_DEPLOYABLE_EXP_AMMO_DESC
+LANG_ENGLISH        "Deploy an Explosive Ammo box for your team."
+
+REFERENCE           KILLSTREAKS_DEPLOYABLE_VEST
+LANG_ENGLISH        "Ballistic Vests"
+
+REFERENCE           KILLSTREAKS_DEPLOYABLE_VEST_DESC
+LANG_ENGLISH        "Deploy a bag of Ballistic Vests for your team."
+
+REFERENCE           KILLSTREAKS_DIRECTIONAL_UAV
+LANG_ENGLISH        "Directional UAV"
+
+REFERENCE           KILLSTREAKS_DIRECTIONAL_UAV_DESC
+LANG_ENGLISH        "Call a UAV that shows where your enemy is facing."
+
+REFERENCE           KILLSTREAKS_DOUBLE_UAV
+LANG_ENGLISH        "Advanced UAV"
+
+REFERENCE           KILLSTREAKS_DOUBLE_UAV_DESC
+LANG_ENGLISH        "UAV with faster sweep time."
+
+REFERENCE           KILLSTREAKS_EARNED_AIRDROP_MEGA
+LANG_ENGLISH        "Press [{+actionslot 4}] for EMERGENCY AIRDROP.\n"
+
+REFERENCE           KILLSTREAKS_EMP
+LANG_ENGLISH        "EMP"
+
+REFERENCE           KILLSTREAKS_EMP_DESC
+LANG_ENGLISH        "Temporarily disables enemy electronics."
+
+REFERENCE           KILLSTREAKS_ESCORT_AIRDROP
+LANG_ENGLISH        "Escort Airdrop"
+
+REFERENCE           KILLSTREAKS_ESCORT_AIRDROP_DESC
+LANG_ENGLISH        "An Osprey delivers and defends several Care Packages."
+
+REFERENCE           KILLSTREAKS_EXPLOSIVE_AMMO
+LANG_ENGLISH        "Explosive Ammo"
+
+REFERENCE           KILLSTREAKS_EXPLOSIVE_AMMO_DESC
+LANG_ENGLISH        "Swaps out your rounds for Explosive Ammo."
+
+REFERENCE           KILLSTREAKS_GL_TURRET
+LANG_ENGLISH        "Grenade Launcher Turret"
+
+REFERENCE           KILLSTREAKS_GL_TURRET_DESC
+LANG_ENGLISH        "Place and man a Grenade Launcher Turret."
+
+REFERENCE           KILLSTREAKS_HARRIER_AIRSTRIKE
+LANG_ENGLISH        "Harrier Strike"
+
+REFERENCE           KILLSTREAKS_HARRIER_AIRSTRIKE_DESC
+LANG_ENGLISH        "Airstrike with a hovering Harrier.\n"
+
+REFERENCE           KILLSTREAKS_HELI_MINIGUNNER
+LANG_ENGLISH        "Heli Minigunner"
+
+REFERENCE           KILLSTREAKS_HELI_MINIGUNNER_DESC
+LANG_ENGLISH        "Get picked up by a Heli and man the Minigun."
+
+REFERENCE           KILLSTREAKS_HELI_SNIPER
+LANG_ENGLISH        "Heli Sniper"
+
+REFERENCE           KILLSTREAKS_HELI_SNIPER_DESC
+LANG_ENGLISH        "Get picked up by a Heli and Snipe from above."
+
+REFERENCE           KILLSTREAKS_HELICOPTER
+LANG_ENGLISH        "Attack Helicopter"
+
+REFERENCE           KILLSTREAKS_HELICOPTER_BLACKBOX
+LANG_ENGLISH        "Helicopter Blackbox"
+
+REFERENCE           KILLSTREAKS_HELICOPTER_BLACKBOX_DESC
+LANG_ENGLISH        "Longer lasting helicopter."
+
+REFERENCE           KILLSTREAKS_HELICOPTER_DESC
+LANG_ENGLISH        "Call in a support helicopter."
+
+REFERENCE           KILLSTREAKS_HELICOPTER_FLARES
+LANG_ENGLISH        "Defensive Helicopter"
+
+REFERENCE           KILLSTREAKS_HELICOPTER_FLARES_DESC
+LANG_ENGLISH        "Helicopter with flares."
+
+REFERENCE           KILLSTREAKS_HELICOPTER_MINIGUN
+LANG_ENGLISH        "Chopper Gunner"
+
+REFERENCE           KILLSTREAKS_HELICOPTER_MINIGUN_DESC
+LANG_ENGLISH        "Be the gunner of an attack helicopter."
+
+REFERENCE           KILLSTREAKS_HELICOPTER_MK19
+LANG_ENGLISH        "Helicopter Gunner"
+
+REFERENCE           KILLSTREAKS_HELICOPTER_MK19_DESC
+LANG_ENGLISH        "Remote control of a helicopter GL."
+
+REFERENCE           KILLSTREAKS_IMS
+LANG_ENGLISH        "I.M.S."
+
+REFERENCE           KILLSTREAKS_IMS_DESC
+LANG_ENGLISH        "The Intelligent Munitions System detects and eliminates enemy combatants."
+
+REFERENCE           KILLSTREAKS_JUGGERNAUT
+LANG_ENGLISH        "Juggernaut"
+
+REFERENCE           KILLSTREAKS_LITTLEBIRD_FLOCK
+LANG_ENGLISH        "Strafe Run"
+
+REFERENCE           KILLSTREAKS_LITTLEBIRD_FLOCK_DESC
+LANG_ENGLISH        "Strafing Run of 5 Attack Helicopters."
+
+REFERENCE           KILLSTREAKS_LITTLEBIRD_SUPPORT
+LANG_ENGLISH        "AH-6 Overwatch"
+
+REFERENCE           KILLSTREAKS_LITTLEBIRD_SUPPORT_DESC
+LANG_ENGLISH        "Get personal air support from an AH-6 Overwatch."
+
+REFERENCE           KILLSTREAKS_MINIGUN_TURRET
+LANG_ENGLISH        "Minigun Turret"
+
+REFERENCE           KILLSTREAKS_MINIGUN_TURRET_DESC
+LANG_ENGLISH        "Place and man a Minigun Turret."
+
+REFERENCE           KILLSTREAKS_MOBILE_MORTAR
+LANG_ENGLISH        "Mobile Mortar"
+
+REFERENCE           KILLSTREAKS_MOBILE_MORTAR_DESC
+LANG_ENGLISH        "Call in defendable mortar ground support."
+
+REFERENCE           KILLSTREAKS_NONE
+LANG_ENGLISH        "None"
+
+REFERENCE           KILLSTREAKS_NONE_DESC
+LANG_ENGLISH        "No kill streak selected."
+
+REFERENCE           KILLSTREAKS_OSPREY_GUNNER
+LANG_ENGLISH        "Osprey Gunner"
+
+REFERENCE           KILLSTREAKS_OSPREY_GUNNER_DESC
+LANG_ENGLISH        "Be the gunner of an Osprey delivering several Care Packages."
+
+REFERENCE           KILLSTREAKS_PAVELOW
+LANG_ENGLISH        "Pave Low"
+
+REFERENCE           KILLSTREAKS_PAVELOW_DESC
+LANG_ENGLISH        "Heavily armored assault helicopter."
+
+REFERENCE           KILLSTREAKS_PRECISION_AIRSTRIKE
+LANG_ENGLISH        "Precision Airstrike"
+
+REFERENCE           KILLSTREAKS_PRECISION_AIRSTRIKE_DESC
+LANG_ENGLISH        "Call in a directional airstrike."
+
+REFERENCE           KILLSTREAKS_PREDATOR_MISSILE
+LANG_ENGLISH        "Predator Missile"
+
+REFERENCE           KILLSTREAKS_PREDATOR_MISSILE_DESC
+LANG_ENGLISH        "Remote control missile."
+
+REFERENCE           KILLSTREAKS_REMOTE_MG_TURRET
+LANG_ENGLISH        "Remote Sentry"
+
+REFERENCE           KILLSTREAKS_REMOTE_MG_TURRET_DESC
+LANG_ENGLISH        "Toss a small turret and remotely control it."
+
+REFERENCE           KILLSTREAKS_REMOTE_MORTAR
+LANG_ENGLISH        "Reaper"
+
+REFERENCE           KILLSTREAKS_REMOTE_MORTAR_DESC
+LANG_ENGLISH        "Lase missile targets remotely from the Reaper UAV."
+
+REFERENCE           KILLSTREAKS_REMOTE_TANK
+LANG_ENGLISH        "Assault Drone"
+
+REFERENCE           KILLSTREAKS_REMOTE_TANK_DESC
+LANG_ENGLISH        "Remote control an assault ground vehicle."
+
+REFERENCE           KILLSTREAKS_REMOTE_UAV
+LANG_ENGLISH        "Recon Drone"
+
+REFERENCE           KILLSTREAKS_REMOTE_UAV_DESC
+LANG_ENGLISH        "Control a Recon Drone, targeting enemies for your team."
+
+REFERENCE           KILLSTREAKS_SAM_TURRET
+LANG_ENGLISH        "SAM Turret"
+
+REFERENCE           KILLSTREAKS_SAM_TURRET_DESC
+LANG_ENGLISH        "Automated SAM turret that destroys aerial killstreaks."
+
+REFERENCE           KILLSTREAKS_SENTRY
+LANG_ENGLISH        "Sentry Gun"
+
+REFERENCE           KILLSTREAKS_SENTRY_DESC
+LANG_ENGLISH        "Place an automated Sentry Gun."
+
+REFERENCE           KILLSTREAKS_STEALTH_AIRSTRIKE
+LANG_ENGLISH        "Stealth Bomber"
+
+REFERENCE           KILLSTREAKS_STEALTH_AIRSTRIKE_DESC
+LANG_ENGLISH        "Airstrike undetectable on enemy maps."
+
+REFERENCE           KILLSTREAKS_SUPER_AIRSTRIKE
+LANG_ENGLISH        "Super Airstrike"
+
+REFERENCE           KILLSTREAKS_SUPER_AIRSTRIKE_DESC
+LANG_ENGLISH        "Airstrike with some extra kick."
+
+REFERENCE           KILLSTREAKS_TACTICAL_NUKE
+LANG_ENGLISH        "M.O.A.B."
+
+REFERENCE           KILLSTREAKS_TACTICAL_NUKE_DESC
+LANG_ENGLISH        "End the game with a bang."
+
+REFERENCE           KILLSTREAKS_TANK
+LANG_ENGLISH        "Tank"
+
+REFERENCE           KILLSTREAKS_TANK_DESC
+LANG_ENGLISH        "A tank."
+
+REFERENCE           KILLSTREAKS_TEAM_AMMO_REFILL
+LANG_ENGLISH        "Team Ammo Refill"
+
+REFERENCE           KILLSTREAKS_TEAM_AMMO_REFILL_DESC
+LANG_ENGLISH        "Give everyone on your team an immediate ammo refill."
+
+REFERENCE           KILLSTREAKS_TRIPLE_UAV
+LANG_ENGLISH        "Advanced UAV"
+
+REFERENCE           KILLSTREAKS_TRIPLE_UAV_DESC
+LANG_ENGLISH        "Call in a Orbital Recon that shows the direction your enemy is facing."
+
+REFERENCE           KILLSTREAKS_UAV
+LANG_ENGLISH        "UAV"
+
+REFERENCE           KILLSTREAKS_UAV_DESC
+LANG_ENGLISH        "Shows enemies on the minimap."
+
+REFERENCE           KILLSTREAKS_UAV_STRIKE
+LANG_ENGLISH        "Laser Designated Strike"
+
+REFERENCE           KILLSTREAKS_UAV_STRIKE_DESC
+LANG_ENGLISH        "Laze your target and watch the fireworks."
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_AIRSTRIKE
+LANG_ENGLISH        "Air Strike"
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_AIRSTRIKE_DESC
+LANG_ENGLISH        "Precision Air Strike on selected location."
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_ASSAULT
+LANG_ENGLISH        "Assault Chopper"
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_ASSAULT_DESC
+LANG_ENGLISH        "Friendly assault chopper."
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_DELTA
+LANG_ENGLISH        "Delta Squad"
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_DELTA_DESC
+LANG_ENGLISH        "Delta Force allies dropped in via chopper."
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_PREDATOR
+LANG_ENGLISH        "Predator Missile"
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_PREDATOR_DESC
+LANG_ENGLISH        "Missile from UCAV."
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_RIOT
+LANG_ENGLISH        "Riot Shield Squad"
+
+REFERENCE           SO_SURVIVAL_AIRSUPPORT_RIOT_DESC
+LANG_ENGLISH        "Riot Shield allies dropped in via chopper."
+
+REFERENCE           SO_SURVIVAL_AMMO_REFILL
+LANG_ENGLISH        "Refill Bullet Ammo"
+
+REFERENCE           SO_SURVIVAL_AMMO_REFILL_DESC
+LANG_ENGLISH        "Refills ammo for your primary weapons."
+
+REFERENCE           SO_SURVIVAL_ARMOR_POINTS
+LANG_ENGLISH        "Armor         &&1"
+
+REFERENCE           SO_SURVIVAL_ARMORY_AIRSUPPORT
+LANG_ENGLISH        "AIR SUPPORT ARMORY"
+
+REFERENCE           SO_SURVIVAL_ARMORY_AIRSUPPORT_AV
+LANG_ENGLISH        "Air Support Enabled!"
+
+REFERENCE           SO_SURVIVAL_ARMORY_AIRSUPPORT_DESC
+LANG_ENGLISH        "Call in Predator missiles, Friendly support and Perk air drops."
+
+REFERENCE           SO_SURVIVAL_ARMORY_ATTACHED
+LANG_ENGLISH        "Attached"
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT
+LANG_ENGLISH        "EQUIPMENT ARMORY"
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_AV
+LANG_ENGLISH        "Equipment Armory Enabled!"
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_DEF_GROUP
+LANG_ENGLISH        "Defensive Equipment"
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_DEF_GROUP_DESC
+LANG_ENGLISH        "Body Armor, Riot Shield and Self Revive."
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_DESC
+LANG_ENGLISH        "Purchase Explosives, Sentries, Armor and more..."
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_EXP_GROUP
+LANG_ENGLISH        "Explosives"
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_EXP_GROUP_DESC
+LANG_ENGLISH        "Frag grenades, Flashbangs, Claymores and C4s."
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_SENTRY_GROUP
+LANG_ENGLISH        "Auto Sentries"
+
+REFERENCE           SO_SURVIVAL_ARMORY_EQUIPMENT_SENTRY_GROUP_DESC
+LANG_ENGLISH        "Mini-gun mounted sentry and grenade launchers."
+
+REFERENCE           SO_SURVIVAL_ARMORY_FULL
+LANG_ENGLISH        "Full"
+
+REFERENCE           SO_SURVIVAL_ARMORY_LOCKED_LEVEL
+LANG_ENGLISH        "Locked Lv. &&1"
+
+REFERENCE           SO_SURVIVAL_ARMORY_LOCKED_LV
+LANG_ENGLISH        "Lv. &&1"
+
+REFERENCE           SO_SURVIVAL_ARMORY_NA
+LANG_ENGLISH        "N/A"
+
+REFERENCE           SO_SURVIVAL_ARMORY_OWNED
+LANG_ENGLISH        "Owned"
+
+REFERENCE           SO_SURVIVAL_ARMORY_PERKS
+LANG_ENGLISH        "Perk Care Package"
+
+REFERENCE           SO_SURVIVAL_ARMORY_PERKS_CAPS
+LANG_ENGLISH        "PERK CARE PACKAGE"
+
+REFERENCE           SO_SURVIVAL_ARMORY_PERKS_DESC
+LANG_ENGLISH        "Airdropped perk packages. ^3Collecting ^3a ^3new ^3perk ^3will ^3replace ^3the ^3old ^3perk."
+
+REFERENCE           SO_SURVIVAL_ARMORY_UPGRADE
+LANG_ENGLISH        "Upgrade >"
+
+REFERENCE           SO_SURVIVAL_ARMORY_USE_AIRSUPPORT
+LANG_ENGLISH        "Hold ^3[{+activate}]^7 to use Air Support"
+
+REFERENCE           SO_SURVIVAL_ARMORY_USE_EQUIPMENT
+LANG_ENGLISH        "Hold ^3[{+activate}]^7 to use Equipment Armory"
+
+REFERENCE           SO_SURVIVAL_ARMORY_USE_WEAPON
+LANG_ENGLISH        "Hold ^3[{+activate}]^7 to use Weapon Armory"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON
+LANG_ENGLISH        "WEAPON ARMORY"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_ASR_GROUP
+LANG_ENGLISH        "Assault Rifles"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_ATTACHMENT
+LANG_ENGLISH        " - ATTACHMENTS"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_AV
+LANG_ENGLISH        "Weapon Armory Enabled!"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_DESC
+LANG_ENGLISH        "Purchase and upgrade weapons."
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_LMG_GROUP
+LANG_ENGLISH        "Light Machine Guns"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_MPISTOL_GROUP
+LANG_ENGLISH        "Machine Pistols"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_PISTOL_GROUP
+LANG_ENGLISH        "Handguns"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_SG_GROUP
+LANG_ENGLISH        "Shotguns"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_SMG_GROUP
+LANG_ENGLISH        "Sub Machine Guns"
+
+REFERENCE           SO_SURVIVAL_ARMORY_WEAPON_SR_GROUP
+LANG_ENGLISH        "Sniper Rifles"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_ACOG_SCOPE
+LANG_ENGLISH        "ACOG Scope"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_EOTECH
+LANG_ENGLISH        "Holographic Sight"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_GRENADE_LAUNCHER
+LANG_ENGLISH        "M203 Grenade Launcher"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_GRENADE_LAUNCHER1
+LANG_ENGLISH        "GP25 Grenade Launcher"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_GRENADE_LAUNCHER2
+LANG_ENGLISH        "M320 Grenade Launcher"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_GRIP
+LANG_ENGLISH        "Grip"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_RED_DOT_SIGHT
+LANG_ENGLISH        "Red Dot Sight"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_SCOPE
+LANG_ENGLISH        "Scope Attachment"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_SHOTGUN
+LANG_ENGLISH        "Shotgun Attachment"
+
+REFERENCE           SO_SURVIVAL_ATTACHMENT_UNDERBARREL
+LANG_ENGLISH        "Under-barrel Attachment"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_FREEZE_METER
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: Freeze Meter"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_LASTSTAND
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +Laststand"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_MULTIPLIER
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: x10"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_POINT
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +5000"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_SCORE
+LANG_ENGLISH        "Bonus Score +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_SENTRY
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: Sentry"
+
+REFERENCE           SO_SURVIVAL_CHAOS_BONUS_TIME
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +1:00"
+
+REFERENCE           SO_SURVIVAL_CHAOS_CARE_PACKAGE
+LANG_ENGLISH        "Care Package +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_CHEMICAL_CORPS
+LANG_ENGLISH        "Chemical Corps +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_CLAYMORE_CORPS
+LANG_ENGLISH        "Claymore Corps +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DEFAULT_DESC
+LANG_ENGLISH        "Battle a constant stream of enemies"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DES_CHOPPER
+LANG_ENGLISH        "Chopper Destroyed +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DOG_KILL
+LANG_ENGLISH        "Dog Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DOG_TAGS
+LANG_ENGLISH        "Dog Tags +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_DOME_DESC
+LANG_ENGLISH        "Survival of the fittest!  Enemies are coming from everywhere."
+
+REFERENCE           SO_SURVIVAL_CHAOS_EASY_KILL
+LANG_ENGLISH        "Easy Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_ELITE_KILL
+LANG_ENGLISH        "Elite Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_CHEMICAL
+LANG_ENGLISH        "Chemical Corps Kill (+300):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_CHOPPER
+LANG_ENGLISH        "Chopper Destroyed (+2000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EASY
+LANG_ENGLISH        "Easy Kill (+50):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_ELITE
+LANG_ENGLISH        "Elite Kill (+250):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXECUTION
+LANG_ENGLISH        "Execution (+200):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXP_DOG
+LANG_ENGLISH        "Explosive Dog Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXP_JUG
+LANG_ENGLISH        "Explosive Juggernaut Kill (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_EXP_KILL
+LANG_ENGLISH        "Explosive Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_GRENADE
+LANG_ENGLISH        "Grenade Kill (+400):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_HARDENED
+LANG_ENGLISH        "Hardened Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_HEADSHOT
+LANG_ENGLISH        "Head Shot (+300):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_KNIFE
+LANG_ENGLISH        "Knife Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_LONG_SHOT
+LANG_ENGLISH        "Long Shot (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_MARTYRDOM
+LANG_ENGLISH        "Martyrdom Kill (+150):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_MASSIVE_EXP
+LANG_ENGLISH        "Massive Explosion (+2000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_MUL_KILL
+LANG_ENGLISH        "Multi Kill (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_NEW_WEAPON
+LANG_ENGLISH        "New Weapon Collected (+500):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_QUAD_KILL
+LANG_ENGLISH        "Quad Kill (+800):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_REG_DOG
+LANG_ENGLISH        "Regular Dog Kill (+100):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_REG_JUG
+LANG_ENGLISH        "Regular Juggernaut Kill (+500):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_REG_KILL
+LANG_ENGLISH        "Regular Kill (+100):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_SHIELD_JUG
+LANG_ENGLISH        "Shield Juggernaut Kill (+750):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_HEADSHOT
+LANG_ENGLISH        "Triple Head Shot (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_KILL
+LANG_ENGLISH        "Triple Kill (+600):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_KNIFE
+LANG_ENGLISH        "Triple Knife Kill (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_TRI_LONGSHOT
+LANG_ENGLISH        "Triple Long Shot (+1000):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EOG_VETERAN
+LANG_ENGLISH        "Veteran Kill (+200):"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXECUTION
+LANG_ENGLISH        "Execution +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXP_DOG
+LANG_ENGLISH        "Explosive Dog +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXP_JUG
+LANG_ENGLISH        "Explosive Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_EXPLOSION
+LANG_ENGLISH        "Explosion +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_GRENADE
+LANG_ENGLISH        "Grenade +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_HARDENED_KILL
+LANG_ENGLISH        "Hardened Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_HEAD_SHOT
+LANG_ENGLISH        "Head Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_HIGHEST_COMBO
+LANG_ENGLISH        "Highest Combo Multiplier:"
+
+REFERENCE           SO_SURVIVAL_CHAOS_LONG_SHOT
+LANG_ENGLISH        "Long Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MASSIVE_EXPLOSION
+LANG_ENGLISH        "Massive Explosion +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MINIGUN_JUG
+LANG_ENGLISH        "Minigun Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MODE_CAPS
+LANG_ENGLISH        "CHAOS"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MODE_DESC
+LANG_ENGLISH        "Blast your way through an onslaught of enemies"
+
+REFERENCE           SO_SURVIVAL_CHAOS_MULTI_KILL
+LANG_ENGLISH        "Multi Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_NEW_WEAPON
+LANG_ENGLISH        "New Weapon +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_OBJECTIVE
+LANG_ENGLISH        "Survive the Chaos..."
+
+REFERENCE           SO_SURVIVAL_CHAOS_PARIS_DESC
+LANG_ENGLISH        "Attempt to survive relentless attacks from enemies in the streets of Paris."
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_1887
+LANG_ENGLISH        "Press [{+activate}] for Model 1887"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_AA12
+LANG_ENGLISH        "Press [{+activate}] for AA-12"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_ACR
+LANG_ENGLISH        "Press [{+activate}] for ACR 6.8"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_AK47
+LANG_ENGLISH        "Press [{+activate}] for AK-47"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_AS50
+LANG_ENGLISH        "Press [{+activate}] for AS50"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_BONUS_POINTS
+LANG_ENGLISH        "Press [{+activate}] For Bonus Pickup: +5000"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_C4
+LANG_ENGLISH        "Press [{+activate}] for C4"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_CLAYMORE
+LANG_ENGLISH        "Press [{+activate}] for Claymore"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_CM901
+LANG_ENGLISH        "Press [{+activate}] for CM901"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_FAD
+LANG_ENGLISH        "Press [{+activate}] for FAD"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_FLASH
+LANG_ENGLISH        "Press [{+activate}] for Flash Grenade"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_FMG9
+LANG_ENGLISH        "Press [{+activate}] for FMG9"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_G18
+LANG_ENGLISH        "Press [{+activate}] for G18"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_G36
+LANG_ENGLISH        "Press [{+activate}] for G36C"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M16
+LANG_ENGLISH        "Press [{+activate}] for M16A4"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M4
+LANG_ENGLISH        "Press [{+activate}] for M4A1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M60
+LANG_ENGLISH        "Press [{+activate}] for M60E4"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_M9
+LANG_ENGLISH        "Press [{+activate}] for PM-9"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MG36
+LANG_ENGLISH        "Press [{+activate}] for MG36"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MK14
+LANG_ENGLISH        "Press [{+activate}] for MK14"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MK46
+LANG_ENGLISH        "Press [{+activate}] for MK46"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MP5
+LANG_ENGLISH        "Press [{+activate}] for MP5"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MP7
+LANG_ENGLISH        "Press [{+activate}] for MP7"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_MP9
+LANG_ENGLISH        "Press [{+activate}] for MP9"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_P90
+LANG_ENGLISH        "Press [{+activate}] for P90"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_PECHENEG
+LANG_ENGLISH        "Press [{+activate}] for PKP Pecheneg"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_PP90
+LANG_ENGLISH        "Press [{+activate}] for PP90M1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_RPG
+LANG_ENGLISH        "Press [{+activate}] for RPG-7"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_RSASS
+LANG_ENGLISH        "Press [{+activate}] for RSASS"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_SA80
+LANG_ENGLISH        "Press [{+activate}] for L86 LSW"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_SCAR
+LANG_ENGLISH        "Press [{+activate}] for SCAR-L"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_SKORPION
+LANG_ENGLISH        "Press [{+activate}] for Skorpion"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_STRIKER
+LANG_ENGLISH        "Press [{+activate}] for Striker"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_TYPE95
+LANG_ENGLISH        "Press [{+activate}] for Type 95"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_UMP45
+LANG_ENGLISH        "Press [{+activate}] for UMP45"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_USAS12
+LANG_ENGLISH        "Press [{+activate}] for USAS 12"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PICKUP_USP45
+LANG_ENGLISH        "Press [{+activate}] for USP45"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PLUS_SIGN
+LANG_ENGLISH        " ^8+"
+
+REFERENCE           SO_SURVIVAL_CHAOS_PRE
+LANG_ENGLISH        "Chaos:"
+
+REFERENCE           SO_SURVIVAL_CHAOS_QUAD_KILL
+LANG_ENGLISH        "Quad Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_REG_JUG
+LANG_ENGLISH        "Regular Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_REGULAR_KILL
+LANG_ENGLISH        "Regular Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SHIELD_JUG
+LANG_ENGLISH        "Shield Juggernaut +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_DEMO_MAN
+LANG_ENGLISH        "Demolition Man"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_FINAL_STAND
+LANG_ENGLISH        "Final Stand!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_HEAD_HUNTER
+LANG_ENGLISH        "Head Hunter"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_LONG_SHOOTER
+LANG_ENGLISH        "Long Shooter"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_MULTI_KILL
+LANG_ENGLISH        "Multi Kill!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_QUAD_KILL
+LANG_ENGLISH        "Quad Kill!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_SLASHER
+LANG_ENGLISH        "Slasher"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SPLASH_TRIPLE_KILL
+LANG_ENGLISH        "Triple Kill!"
+
+REFERENCE           SO_SURVIVAL_CHAOS_STAB
+LANG_ENGLISH        "Stab +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_SUICIDE_BOMBER
+LANG_ENGLISH        "Suicide Bomber +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_HEADSHOT
+LANG_ENGLISH        "Triple Head Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_KILL
+LANG_ENGLISH        "Triple Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_KNIFE_KILL
+LANG_ENGLISH        "Triple Knife Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_TRIPLE_LONGSHOT
+LANG_ENGLISH        "Triple Long Shot +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_UNDERGROUND_DESC
+LANG_ENGLISH        "Fight through the trainyard as enemies attempt to stop you."
+
+REFERENCE           SO_SURVIVAL_CHAOS_VETERAN_KILL
+LANG_ENGLISH        "Veteran Kill +&&1"
+
+REFERENCE           SO_SURVIVAL_CHAOS_VILLAGE_DESC
+LANG_ENGLISH        "Battle through an onslaught of enemies in the village."
+
+REFERENCE           SO_SURVIVAL_COMBO_CAPS
+LANG_ENGLISH        "COMBO"
+
+REFERENCE           SO_SURVIVAL_COST
+LANG_ENGLISH        "COST"
+
+REFERENCE           SO_SURVIVAL_CREDITS
+LANG_ENGLISH        "$ &&1"
+
+REFERENCE           SO_SURVIVAL_CREDITS_MINUS
+LANG_ENGLISH        "-$ &&1"
+
+REFERENCE           SO_SURVIVAL_CREDITS_PLUS
+LANG_ENGLISH        "+$ &&1"
+
+REFERENCE           SO_SURVIVAL_DPAD_RIGHT_SLOT_FULL
+LANG_ENGLISH        "You have no free slot."
+
+REFERENCE           SO_SURVIVAL_ENEMIES_LEFT
+LANG_ENGLISH        "&&1 Enemies Left"
+
+REFERENCE           SO_SURVIVAL_ENEMY_LEFT
+LANG_ENGLISH        "&&1 Enemy Left"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_BODYARMOR
+LANG_ENGLISH        "Body Armor"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_BODYARMOR_DESC
+LANG_ENGLISH        "250 Armor hit points."
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_C4
+LANG_ENGLISH        "C4 x5 (10 Max)"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_CLAYMORE
+LANG_ENGLISH        "Claymore x5 (10 Max)"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_FLASH_REFILL
+LANG_ENGLISH        "Flashbang Refill"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_FLASH_REFILL_DESC
+LANG_ENGLISH        "Refills Flashbangs up to 4."
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_FRAG_REFILL
+LANG_ENGLISH        "Frag Grenade Refill"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_FRAG_REFILL_DESC
+LANG_ENGLISH        "Refills Frags up to 4."
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_JUGARMOR
+LANG_ENGLISH        "Juggernaut Armor"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_JUGARMOR_DESC
+LANG_ENGLISH        "Heavy wearable armor."
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_LASTSTAND
+LANG_ENGLISH        "Self Revive"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_LASTSTAND_DESC
+LANG_ENGLISH        "When knocked down, shoot your way back up."
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_RPG
+LANG_ENGLISH        "RPG-7 x2 (4 Max)"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_SENTRY
+LANG_ENGLISH        "Sentry Gun"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_SENTRY_DESC
+LANG_ENGLISH        "Mini-gun mounted sentry."
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_SENTRY_GL
+LANG_ENGLISH        "Sentry Grenade Launcher"
+
+REFERENCE           SO_SURVIVAL_EQUIPMENT_SENTRY_GL_DESC
+LANG_ENGLISH        "Grenade launcher mounted sentry."
+
+REFERENCE           SO_SURVIVAL_LB_CHAOS_CAP
+LANG_ENGLISH        "SOLO CHAOS"
+
+REFERENCE           SO_SURVIVAL_LB_CHAOS_TEAM_CAP
+LANG_ENGLISH        "TEAM CHAOS"
+
+REFERENCE           SO_SURVIVAL_MENU_SHARE_HINT
+LANG_ENGLISH        "SHARE $500 ^2F2^7"
+
+REFERENCE           SO_SURVIVAL_MENU_SHARE_SENDING
+LANG_ENGLISH        "SENDING..."
+
+REFERENCE           SO_SURVIVAL_OPTION_CHOOSE_CONTENT
+LANG_ENGLISH        "Choose Content Pack"
+
+REFERENCE           SO_SURVIVAL_OPTION_DLC
+LANG_ENGLISH        "DLC content"
+
+REFERENCE           SO_SURVIVAL_OPTION_ON_DISK
+LANG_ENGLISH        "On Disk Content"
+
+REFERENCE           SO_SURVIVAL_PARTNER_READY
+LANG_ENGLISH        "Teammate ready\nPress ^3[{skip}]^7 to ready up: &&1"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_ACCURACY
+LANG_ENGLISH        "Accuracy:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_COMPLETION_XP
+LANG_ENGLISH        "Completion XP:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_CREDIT_MINUS
+LANG_ENGLISH        "-$&&1"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_CREDIT_PLUS
+LANG_ENGLISH        "+$&&1"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_CREDITS_EARNED
+LANG_ENGLISH        "Credits Earned:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_DAMAGETAKEN
+LANG_ENGLISH        "Damage Taken:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_DOWNED
+LANG_ENGLISH        "Downed:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_HEADSHOT
+LANG_ENGLISH        "Headshots:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_KILLS
+LANG_ENGLISH        "Kills:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_PERCENT
+LANG_ENGLISH        "&&1%"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_POINT
+LANG_ENGLISH        "&&1"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_REVIVES
+LANG_ENGLISH        "Revived Teammate:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_REWARD
+LANG_ENGLISH        "Wave Bonus: $&&1"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_SCORE
+LANG_ENGLISH        "Score:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_TIME
+LANG_ENGLISH        "Time:"
+
+REFERENCE           SO_SURVIVAL_PERFORMANCE_WAVEBONUS
+LANG_ENGLISH        "Wave:"
+
+REFERENCE           SO_SURVIVAL_READY_UP
+LANG_ENGLISH        "Press ^3[{skip}]^7 to ready up: &&1"
+
+REFERENCE           SO_SURVIVAL_READY_UP_WAIT
+LANG_ENGLISH        "Waiting on other player"
+
+REFERENCE           SO_SURVIVAL_REPLACE_WEAPON_NOTE
+LANG_ENGLISH        "^3Only ^3two ^3bullet ^3weapons ^3can ^3be ^3carried. ^3Buying ^3a ^3new ^3weapon ^3will ^3replace ^3your ^3current ^3one."
+
+REFERENCE           SO_SURVIVAL_REPLACE_WEAPON_WARNING
+LANG_ENGLISH        "Buying this will replace your current weapon."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_EXECUTION
+LANG_ENGLISH        "Executions"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_EXECUTION_DESC
+LANG_ENGLISH        "Get 4 Executions in a round by killing dying enemies."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_EXECUTION_SPLASH
+LANG_ENGLISH        "Executioner!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_FLASH
+LANG_ENGLISH        "Flash Kill"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_FLASH_DESC
+LANG_ENGLISH        "Kill 5 enemies while flash banged."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_FLASH_SPLASH
+LANG_ENGLISH        "Flash Banger!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_HEADSHOT
+LANG_ENGLISH        "Headshots"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_HEADSHOT_DESC
+LANG_ENGLISH        "Get 4 Headshots in a round."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_HEADSHOT_SPLASH
+LANG_ENGLISH        "Head Blast!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_KNIFE
+LANG_ENGLISH        "Knife Streak"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_KNIFE_DESC
+LANG_ENGLISH        "Stab 5 enemies in a row."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_KNIFE_SPLASH
+LANG_ENGLISH        "The Butcher!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_QUADKILL
+LANG_ENGLISH        "Quad Kill"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_QUADKILL_DESC
+LANG_ENGLISH        "Kill 4 enemies at once."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_QUADKILL_SPLASH
+LANG_ENGLISH        "Quad Pwnage!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_SIDEKICK
+LANG_ENGLISH        "Assists"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_SIDEKICK_DESC
+LANG_ENGLISH        "Get 4 kill assists."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_SIDEKICK_SPLASH
+LANG_ENGLISH        "Side Kick!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_STAGGER
+LANG_ENGLISH        "Rampage"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_STAGGER_DESC
+LANG_ENGLISH        "Kill enemies quickly."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_STAGGER_SPLASH
+LANG_ENGLISH        "Rampage!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_STREAK
+LANG_ENGLISH        "Kill Streak"
+
+REFERENCE           SO_SURVIVAL_SUR_CH_STREAK_DESC
+LANG_ENGLISH        "Get 4 kills while not taking damage."
+
+REFERENCE           SO_SURVIVAL_SUR_CH_STREAK_SPLASH
+LANG_ENGLISH        "Kill Streak!  +$&&1"
+
+REFERENCE           SO_SURVIVAL_SURVIVAL_ARMORIES
+LANG_ENGLISH        "SURVIVAL ARMORIES"
+
+REFERENCE           SO_SURVIVAL_SURVIVAL_OBJECTIVE
+LANG_ENGLISH        "Survive..."
+
+REFERENCE           SO_SURVIVAL_SURVIVE_TIME
+LANG_ENGLISH        "Survived: "
+
+REFERENCE           SO_SURVIVAL_SURVIVED_TO_WAVE
+LANG_ENGLISH        "Survived to Wave &&1!"
+
+REFERENCE           SO_SURVIVAL_UNLOCKED
+LANG_ENGLISH        "UNLOCKED"
+
+REFERENCE           SO_SURVIVAL_WAVE_PERFORMANCE
+LANG_ENGLISH        "Combat Performance"
+
+REFERENCE           SO_SURVIVAL_WAVE_PERFORMANCE_ACCURACY
+LANG_ENGLISH        "Accuracy: &&1%"
+
+REFERENCE           SO_SURVIVAL_WAVE_PERFORMANCE_CAMPING
+LANG_ENGLISH        "Camping Time: &&1"
+
+REFERENCE           SO_SURVIVAL_WAVE_PERFORMANCE_DAMAGE
+LANG_ENGLISH        "Damage Taken: &&1"
+
+REFERENCE           SO_SURVIVAL_WAVE_PERFORMANCE_HEADSHOT
+LANG_ENGLISH        "Headshot Kills: &&1"
+
+REFERENCE           SO_SURVIVAL_WAVE_PERFORMANCE_TIME
+LANG_ENGLISH        "Time: &&1"
+
+REFERENCE           SO_SURVIVAL_WAVE_SUCCESS_TITLE
+LANG_ENGLISH        "Wave &&1 Cleared!"
+
+REFERENCE           SO_SURVIVAL_WAVE_SURVIVED
+LANG_ENGLISH        "Waves Survived: &&1"
+
+REFERENCE           SO_SURVIVAL_WAVE_TIME
+LANG_ENGLISH        "Wave &&1"
+
+REFERENCE           SO_SURVIVAL_WAVE_TITLE
+LANG_ENGLISH        "Hostiles Inbound!"
+
+REFERENCE           SO_SURVIVAL_WEAPON_UPGRADES
+LANG_ENGLISH        "WEAPON UPGRADES"
+
+ENDMARKER
