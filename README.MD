@@ -12,16 +12,16 @@ Small Project to bring some more fun and longevity into the IW5 Special Ops Game
   - urLiver
   
 ## How to Install
-Make a backup of your english and main folder from you Game
-Download this File ( Uploaded on Mediafire due to Github Max File Size Limit ) [iw_02.iwd](https://www.mediafire.com/file/d6vojn8tsjx24p6/iw_02.iwd/file) and Place it in your main folder.
-Copy any content of the zone_out subfolders into the english folder
-Start the Game
+1. Make a backup of your english and main folder from you Game
+2. Download this File ( Uploaded on Mediafire due to Github Max File Size Limit ) [iw_02.iwd](https://www.mediafire.com/file/d6vojn8tsjx24p6/iw_02.iwd/file) and Place it in your main folder.
+3. Copy any content of the zone_out subfolders into the english folder
+4. Start the Game
 
 ## How to Compile
-Get OAT ( OpenAssetTool ) and set it up
-Then place the content of the zone_raw folder into the folder of OAT
-Get the aizombies_misc.ff and iw4_weapons.ff [from Slvr11 AIZombies Repo](https://github.com/Slvr11/AIZombiesSupreme-PlutoIW5) and place them in your english folder from OAT
-Run Any of the Build Scripts or Make your own
+1. Get OAT ( OpenAssetTool ) and set it up
+2. Then place the content of the zone_raw folder into the folder of OAT
+3. Get the aizombies_misc.ff and iw4_weapons.ff [from Slvr11 AIZombies Repo](https://github.com/Slvr11/AIZombiesSupreme-PlutoIW5) and place them in your english folder from OAT
+4. Run Any of the Build Scripts or Make your own
 
 ## Checklist
 - Weapons
