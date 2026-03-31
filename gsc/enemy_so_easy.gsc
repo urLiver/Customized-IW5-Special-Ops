@@ -23,30 +23,27 @@ main()
 
     self.weapon = "none";
 
-    switch ( codescripts\character::get_random_character( 4 ) )
+    if( RandomInt( 100 ) < 25 )
     {
-        case 0:
-            _id_05BD::main();
-            break;
-        case 1:
-            _id_05BE::main();
-            break;
-        case 2:
-            _id_05BF::main();
-            break;
-        case 3:
-            if( RandomInt( 100 ) < 5 )
-            {
-                self setmodel( "body_russian_president_dirty" );
-                self attach( "head_russian_president_dirty", "", 1 );
-                self.headmodel = "head_russian_president_dirty";
-                self.voice = "russian";
-            }
-            else
-            {
+        self setmodel( "body_russian_president_dirty" );
+        self attach( "head_russian_president_dirty", "", 1 );
+        self.headmodel = "head_russian_president_dirty";
+        self.voice = "russian";
+    }
+    else
+    {
+        switch ( codescripts\character::get_random_character( 3 ) )
+        {
+            case 0:
                 _id_05BD::main();
-            }
-            break;
+                break;
+            case 1:
+                _id_05BE::main();
+                break;
+            case 2:
+                _id_05BF::main();
+                break;
+        }
     }
 }
 
