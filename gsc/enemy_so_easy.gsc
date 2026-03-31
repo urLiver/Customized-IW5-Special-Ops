@@ -23,7 +23,7 @@ main()
 
     self.weapon = "none";
 
-    if( RandomInt( 100 ) < 25 )
+    if( RandomInt( 100 ) < 2 )
     {
         self setmodel( "body_russian_president_dirty" );
         self attach( "head_russian_president_dirty", "", 1 );
