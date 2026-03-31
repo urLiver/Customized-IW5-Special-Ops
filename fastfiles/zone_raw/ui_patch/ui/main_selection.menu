@@ -1,0 +1,484 @@
+#include "ui/utils/animations.inc"
+#include "ui/utils/game_defaults.inc"
+
+#define Button_MainMenu( x_, y_, w_, h_, text_, anim_name_, function_ ) \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        type                        1 \
+        visible                     1 \
+        Animation_Focus( anim_name_ ); \
+        action \
+        { \
+            function_; \
+            play mouse_click; \
+        } \
+    } \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        textalign                   ALIGN_MIDDLE_CENTER \
+        textscale                   0.275 \
+        textfont                    FONT_NORMAL \
+        text                        ( text_ ) \
+        forecolor                   1 1 1 1 \
+        exp forecolor r             ( 1 - Animation_Get( anim_name_, 250 ) * 0.75 ) \   
+        exp forecolor b             ( 1 - Animation_Get( anim_name_, 250 ) * 0.75 ) \
+    } \
+    itemDef \
+    { \
+        rect                        0 0 0 1 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        backcolor                   0.25 1 0.25 1 \
+        background                  "white" \
+        exp rect w                  ( getTextWidth( locstring( text_ ), FONT_NORMAL, 0.275 ) *  Animation_Get( anim_name_, 250 ) ) \
+        exp rect x                  ( x_ + w_ / 2 - ( getTextWidth( locstring( text_ ), FONT_NORMAL, 0.275 ) *  Animation_Get( anim_name_, 250 ) ) / 2 ) \
+        exp rect y                  ( y_ + h_ / 2 + getTextHeight( FONT_NORMAL, 0.275 ) / 2 ) \
+    }
+
+#define Button_MainMenuLocked( x_, y_, w_, h_, text_, anim_name_, function_, locked_ ) \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        type                        1 \
+        visible                     1 \
+        Animation_Focus( anim_name_ ); \
+        exp disabled                ( ! locked_ ) \
+        action \
+        { \
+            function_; \
+            play mouse_click; \
+        } \
+    } \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        textalign                   ALIGN_MIDDLE_CENTER \
+        textscale                   0.275 \
+        textfont                    FONT_NORMAL \
+        text                        ( text_ ) \
+        forecolor                   1 1 1 1 \
+        exp forecolor r             ( select( locked_, 1 - Animation_Get( anim_name_, 250 ) * 0.75, 0.25 ) ) \   
+        exp forecolor g             ( select( locked_, 1, 0.25 ) ) \
+        exp forecolor b             ( select( locked_, 1 - Animation_Get( anim_name_, 250 ) * 0.75, 0.25 ) ) \
+    } \
+    itemDef \
+    { \
+        rect                        0 0 0 1 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        backcolor                   0.25 1 0.25 1 \
+        background                  "white" \
+        exp rect w                  ( getTextWidth( locstring( text_ ), FONT_NORMAL, 0.275 ) *  Animation_Get( anim_name_, 250 ) ) \
+        exp rect x                  ( x_ + w_ / 2 - ( getTextWidth( locstring( text_ ), FONT_NORMAL, 0.275 ) *  Animation_Get( anim_name_, 250 ) ) / 2 ) \
+        exp rect y                  ( y_ + h_ / 2 + getTextHeight( FONT_NORMAL, 0.275 ) / 2 ) \
+    }
+
+#define Spacer_Simple( x_, y_, w_, h_, color_ ) \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        backcolor                   color_ \
+        background                  "white" \
+    }
+
+#define Lables_ExpNormal( x_, y_, w_, h_, text_, font_size_, alignment_ ) \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        forecolor                   1 1 1 1 \
+        textalign                   alignment_ \
+        textscale                   font_size_ \
+        textfont                    FONT_NORMAL \
+        exp text                    ( text_ ) \
+    }
+
+#define Lables_Bold( x_, y_, w_, h_, text_, font_size_, alignment_ ) \
+    itemDef \
+    { \
+        rect                        ( x_ ) ( y_ ) ( w_ ) ( h_ ) 4 4 \
+        style                       1 \
+        decoration                    \
+        visible                     1 \
+        forecolor                   1 1 1 1 \
+        textalign                   alignment_ \
+        textscale                   font_size_ \
+        textfont                    FONT_BOLD \
+        text                        ( text_ ) \
+    }
+
+{
+    menuDef
+    {
+        name                        "main_selection"
+        fullscreen                  1
+        rect                        0 0 640 480 0 0
+        focuscolor                  1 1 1 1
+        soundLoop                   "music_opening"
+        fadeClamp                   1
+        fadeCycle                   1
+        fadeAmount                  0.1
+
+        onOpen
+        {
+            setLocalVarInt ui_sp_stat_progression_easy 0;
+            setLocalVarInt ui_sp_stat_progression_easy (((int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 0)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 1)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 2)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 3)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 4)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 5)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 6)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 7)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 8)) >= 1)));
+            setLocalVarInt ui_sp_stat_progression_easy (localvarint("ui_sp_stat_progression_easy") + ((int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 9)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 10)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 11)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 12)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 13)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 14)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 15)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 16)) >= 1) + (int(getcharbyindex(getprofiledata("missionHighestDifficulty"), 17)) >= 1)));
+
+            setLocalVarBool ui_swfPopupSelectionButtonVis 0;
+            setLocalVarBool ui_swfPopupSelectionBarVis 0;
+            setLocalVarBool ui_swfPopupSelectionDisabled 0;
+
+            setLocalVarString ui_swfPopupContext "invalid";
+
+            focusfirst;
+            
+            setBackgroundVideo ( "" );
+
+            if ( ! getprofiledata( "hasEverPlayed_MainMenu" ) )
+            {
+                setLocalVarBool ui_show_recommendation 1;
+                open offensive_warning;
+            }
+
+            setLocalVarString ui_so_time_text (select((gettimeplayed("so", "days") > 0), gettimeplayed("so", "dhms"), gettimeplayed("so", "hms")));
+            setLocalVarString ui_so_comp_text (select((int((min(1, int(int(getprofiledata("percentCompleteSO")) % 100) / int(tablelookup("sp/rankTable.csv", 0, "maxrank", 1))) * 100 * 10) % 10) == 0), (locstring("@MENU_SP_STAT_NUM_PERCENT_COMPLETE", int(min(1, int(int(getprofiledata("percentCompleteSO")) % 100) / int(tablelookup("sp/rankTable.csv", 0, "maxrank", 1))) * 100))), (locstring("@MENU_SP_STAT_NUM_DOT_PERCENT_COMPLETE", int(min(1, int(int(getprofiledata("percentCompleteSO")) % 100) / int(tablelookup("sp/rankTable.csv", 0, "maxrank", 1))) * 100), int((min(1, int(int(getprofiledata("percentCompleteSO")) % 100) / int(tablelookup("sp/rankTable.csv", 0, "maxrank", 1))) * 100 * 10) % 10)))));
+            setLocalVarString ui_sp_time_text (select((gettimeplayed("sp", "days") > 0), gettimeplayed("sp", "dhms"), gettimeplayed("sp", "hms")));
+            setLocalVarString ui_sp_comp_text (select((int(((getprofiledata("percentCompleteSP") / 100) * 10) % 10) == 0), (locstring("@MENU_SP_STAT_NUM_PERCENT_COMPLETE", int((getprofiledata("percentCompleteSP") / 100)))), (locstring("@MENU_SP_STAT_NUM_DOT_PERCENT_COMPLETE", int((getprofiledata("percentCompleteSP") / 100)), int(((getprofiledata("percentCompleteSP") / 100) * 10) % 10)))));
+           
+            savegamesetlocalbool ui_save_available;
+
+            setdvar arcademode 0;
+            setdvar arcademode_full 0;
+            setdvar start 0;
+            setdvar specialops 0;
+            setdvar so_survival 0;
+            setdvar credits_active 0;
+            setdvar ui_play_credits "";
+            setdvar ui_last_opened_group 0;
+            setdvar ui_version_show 0;
+            setdvar requirestats 1;
+            setdvar ui_online_coop 0;
+
+            setGameMode none;
+
+            execnow Updatedvarsfromprofile;
+            execnow profile_difficultyLoad;
+        }
+
+        onESC
+        {
+            open quit_popmenu;
+        }
+
+        onFocusDueToClose
+        {
+            setLocalVarString ui_hint_text "";
+            focusfirst;
+            setBackgroundVideo ( "" );
+        }
+
+        itemDef
+        {
+            rect                        0 0 640 480 4 4
+            visible                     1
+            style                       3
+            decoration                  
+            backcolor                   1 1 1 1
+            background                  "game_select_sp_bw"
+        }
+
+        itemDef
+        {
+            rect                        230 0 180 90 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            backcolor                   1 1 1 1
+            background                  "mw3_logo_large"
+            exp forecolor a             ( 0.75 * select( ( ( milliseconds() % 5000 ) / 2500 ) <= 1, ( ( milliseconds() % 5000 ) / 2500 ), 2 - ( milliseconds() % 5000 ) / 2500 ) )
+        }
+
+        itemDef
+        {
+            rect                        0 0 1708 480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            forecolor                   0.35 0.35 0.35 1
+            background                  "mw2_main_cloud_overlay"
+            exp rect x                  ( -107 - ( milliseconds() % 60000 / 60000 ) * 854 );
+        }
+        
+        itemDef
+        {
+            rect                        0 0 -1708 -480 0 0
+            style                       3
+            decoration                  
+            visible                     1
+            forecolor                   0.35 0.35 0.35 1
+            background                  "mw2_main_cloud_overlay"
+            exp rect x                  ( 747 + ( milliseconds() % 50000 / 50000 ) * 854 );
+        }
+        
+        Spacer_Simple( 290, 382.5, 60, 1, 1 1 1 1 )
+
+        Button_MainMenuLocked( 280, 320, 80, 15, "@MENU_RESUMEGAME_CAPS", "mainbutton6",
+            if ( localvarbool( "ui_save_available" ) )
+            {
+                setdvar arcademode 0;
+                setdvar arcademode_full 0;
+                setdvar start 0;
+                setdvar solo_play 0;
+                setdvar ui_last_opened_group 0;
+
+                play mouse_click;
+                setdvar ui_char_museum_mode credits_1;
+                setdvar prologue_select 0;
+                exec loadgame_continue;
+                
+            }
+        , localvarbool("ui_save_available" ) );
+
+        Button_MainMenu( 280, 340, 80, 15, "@MENU_NEWGAME_CAPS", "mainbutton5",
+            if ( localvarbool( "ui_save_available" ) )
+            {
+                open popmenu_overwrite_warning;
+            }
+            else
+            {
+                open popmenu_autosave_warning;
+            }
+        );
+
+        Button_MainMenu( 280, 360, 80, 15, "@MENU_MISSION_SELECT_CAPS", "mainbutton4",
+            if ( getprofiledata( "highestMission" ) > 0  )
+            {
+                setdvar arcademode 0;
+                setdvar arcademode_full 0;
+                setdvar start 0;
+                setdvar solo_play 0;
+                setdvar ui_last_opened_group 0;
+                open levels;
+            }
+        );
+        
+        Button_MainMenu( 280, 390, 80, 15, "@MENU_SP_FIND_ONLINE_MATCH_CAPS", "mainbutton3",
+            setdvar arcademode 0;
+            setdvar arcademode_full 0;
+            setdvar start 0;
+            setdvar solo_play 0;
+            setdvar ui_last_opened_group 0;
+            exec xrequirelivesignin;
+            setdvar ui_skip_level_select 1;
+            setdvar ui_online_coop 1;
+            setdvar coop_matching_type_search 1;
+            setLocalVarString ui_saved_focus_main_so getfocuseditemname();
+            if ( usercanplayonline() )
+            {
+                exec xopenonlineservicesdialog;
+                if ( ! iswaitingforonlineservices() )
+                {
+                    if ( coophasrequiredonlinefiles() )
+                    {
+                        open popup_modechoice;
+                    }
+                    else
+                    {
+                        execNow xopenpopupgettingcoopdata;
+                    }
+                }
+            }
+            else
+            {
+                setLocalVarInt ui_specialops_advance 2;
+                open noprofilewarning_levelselect_specops_coop;
+            }
+        );
+
+        Button_MainMenu( 280, 410, 80, 15, "@MENU_SP_PRIVATE_ONLINE_MATCH_CAPS", "mainbutton2",
+            setdvar arcademode 0;
+            setdvar arcademode_full 0;
+            setdvar start 0;
+            setdvar solo_play 0;
+            setdvar ui_last_opened_group 0;
+            exec xrequirelivesignin;
+            setdvar ui_skip_level_select 1;
+            setdvar ui_online_coop 1;
+            setdvar coop_matching_type_search 0;
+            setLocalVarString ui_saved_focus_main_so getfocuseditemname();
+            if ( usercanplayonline() )
+            {
+                exec xopenonlineservicesdialog;
+                if ( ! iswaitingforonlineservices() )
+                {
+                    if ( coophasrequiredonlinefiles() )
+                    {
+                        open popup_modechoice;
+                    }
+                    else
+                    {
+                        execNow xopenpopupgettingcoopdata;
+                    }
+                }
+            }
+            else
+            {
+                setLocalVarInt ui_specialops_advance 2;
+                open noprofilewarning_levelselect_specops_coop;
+            }
+        );
+
+        Button_MainMenu( 280, 430, 80, 15, "@MENU_SP_SOLO_PLAY_CAPS", "mainbutton1",
+            setdvar arcademode 0;
+            setdvar arcademode_full 0;
+            setdvar start 0;
+            setdvar solo_play 0;
+            setdvar ui_last_opened_group 0;
+            setdvar solo_play 1;
+            setdvar ui_online_coop 0;
+            
+            open popup_modechoice;
+        );
+        
+        Lables_Bold( 210, 332.5, 70, 10, "@MENU_SP_CAMPAIGN", 0.225, ALIGN_MIDDLE_LEFT );
+        Lables_ExpNormal( 210, 342.5, 70, 10, localvarstring( "ui_sp_comp_text" ), 0.225, ALIGN_MIDDLE_LEFT );
+        Lables_ExpNormal( 210, 352.5, 70, 10, localvarstring( "ui_sp_time_text" ), 0.225, ALIGN_MIDDLE_LEFT );
+
+        Lables_Bold( 370, 402.5, 70, 10, "@MENU_SP_SPECIAL_OPS_CAPS", 0.225, ALIGN_MIDDLE_RIGHT );
+        Lables_ExpNormal( 370, 412.5, 70, 10, localvarstring( "ui_so_comp_text" ), 0.225, ALIGN_MIDDLE_RIGHT );
+        Lables_ExpNormal( 370, 422.5, 70, 10, localvarstring( "ui_so_time_text" ), 0.225, ALIGN_MIDDLE_RIGHT );
+
+        itemDef
+        {
+            rect                        8 ( 480 - 38 ) 104 30 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            backcolor                   0 0 0 0.4
+            forecolor                   0 0 0 0.4
+            background                  "white"
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 20 ) 100 10 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   ALIGN_MIDDLE_CENTER
+            textscale                   0.190
+            textfont                    FONT_SMALL
+            textstyle                   9
+            forecolor                   0.7 1 0.7 0.85
+            exp text                    locstring( "@MENU_X_SLASH_Y_XP", int( getplayerdata( "experience" ) ), int( tablelookup( "sp/rankTable.csv", 0, levelforexperienceso( getplayerdata( "experience" ) ), 7 ) ) );
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 36 ) 100 10 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   ALIGN_MIDDLE_CENTER
+            textscale                   0.175
+            textfont                    FONT_SMALL
+            exp text                    "@" + tablelookup("sp/ranktable.csv", 0, levelforexperienceso(getplayerdata("experience")), 5);
+        }
+
+        itemDef
+        {
+            rect                        22 ( 480 - 36 ) 76 10 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   ALIGN_MIDDLE_RIGHT
+            textscale                   0.175
+            textfont                    FONT_SMALL
+            exp text                    tablelookup("sp/rankTable.csv", 0, (levelforexperienceso(getplayerdata("experience")) + 1), 14);
+        }
+        itemDef
+        {
+            rect                        22 ( 480 - 36 ) 76 10 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            textalign                   ALIGN_MIDDLE_LEFT
+            textscale                   0.175
+            textfont                    FONT_SMALL
+            exp text                    tablelookup( "sp/rankTable.csv", 0, levelforexperienceso(getplayerdata( "experience" ) ), 14 );
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 24 ) 100 4 4 4
+            style                       1
+            decoration                  
+            visible                     1
+            backcolor                   0 0 0 1
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 24 ) 100 4 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            background                  "dest_alpha_zero"
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 24 ) 100 4 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            background                  "dest_alpha_one"
+            exp rect w                  ( 100 * ( ( getplayerdata( "experience" ) - tablelookup( "sp/rankTable.csv", 0, levelforexperienceso( getplayerdata( "experience" ) ), 2 ) ) / float( tablelookup( "sp/rankTable.csv", 0, levelforexperienceso( getplayerdata( "experience" ) ), 7 ) - tablelookup( "sp/rankTable.csv", 0, levelforexperienceso( getplayerdata( "experience" ) ), 2 ) ) ) );
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 24 ) 100 4 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            background                  "bar_progress_yellow_custom"
+        }
+
+        itemDef
+        {
+            rect                        10 ( 480 - 36 ) 10 10 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            exp material                tablelookup( "sp/rankTable.csv", 0, levelforexperienceso( getplayerdata( "experience" ) ), 6 );
+        }
+
+        itemDef
+        {
+            rect                        100 ( 480 - 36 ) 10 10 4 4
+            style                       3
+            decoration                  
+            visible                     1
+            exp material                tablelookup( "sp/rankTable.csv", 0, levelforexperienceso( getplayerdata( "experience" ) ) + 1, 6 );
+        }
+    }
+}

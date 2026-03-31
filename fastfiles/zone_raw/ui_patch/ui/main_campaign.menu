@@ -1,0 +1,14 @@
+{
+    menuDef
+    {
+        name                        "main_campaign"
+        
+        onOpen
+        {
+            close self;
+            execnow updategamerprofile;
+            setGameMode none;
+            open main_selection;
+        }
+    }
+}

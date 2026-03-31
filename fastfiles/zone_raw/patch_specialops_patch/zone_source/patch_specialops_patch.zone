@@ -1,0 +1,11 @@
+>game,IW5
+
+>name,patch_specialops
+
+menulist,ui_mp/custom_menus.txt
+
+stringtable,sp/survival_armories.csv
+
+scriptfile,137
+
+include,patch_specialops

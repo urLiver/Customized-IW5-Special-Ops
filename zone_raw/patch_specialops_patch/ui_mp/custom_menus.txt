@@ -1,6 +1,0 @@
-{
-    loadMenu { "ui_mp/minimap.menu" }
-    loadMenu { "ui_mp/compassv2.menu" }
-    loadMenu { "ui_mp/weaponinfo.menu" }
-    loadMenu { "ui_mp/stance.menu" }
-}

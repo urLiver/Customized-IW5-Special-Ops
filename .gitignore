@@ -1,0 +1,10 @@
+*.exe
+*.sh
+
+gsc-tool
+
+_build*
+
+fastfiles/zone/
+fastfiles/raw/
+fastfiles/main/
