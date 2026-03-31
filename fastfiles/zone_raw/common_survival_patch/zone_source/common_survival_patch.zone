@@ -7,6 +7,7 @@ scriptfile,1574
 include,common_survival
 
 scriptfile,aitype/enemy_so_easy
+scriptfile,aitype/enemy_dog
 
 weapon,iw5_aa12_mp
 weapon,iw5_striker_mp

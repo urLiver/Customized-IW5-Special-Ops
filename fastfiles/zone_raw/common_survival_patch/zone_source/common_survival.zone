@@ -2840,7 +2840,6 @@ xmodelsurfs,delta_elite_body_assault_bb_lod120
 xmodelsurfs,delta_elite_body_assault_bb_lod220
 xmodelsurfs,delta_elite_body_assault_bb_lod320
 xmodel,body_delta_elite_assault_bb
-scriptfile,aitype/enemy_dog
 scriptfile,animscripts/dog/dog_combat
 scriptfile,animscripts/dog/dog_death
 scriptfile,animscripts/dog/dog_flashed
