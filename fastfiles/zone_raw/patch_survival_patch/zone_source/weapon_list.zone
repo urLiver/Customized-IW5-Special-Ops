@@ -908,3 +908,13 @@ xmodel,,weapon_benelli_super_90
 xmodel,viewmodel_benelli_m4
 weapon,iw4_m1014_mp
 weapon,iw4_m1014upgraded_mp
+
+sound,weap_thundergun_fire_npc
+sound,weap_thundergun_fire_plr
+sound,weap_thundergun_fire_last_plr
+sound,fly_thundergun_cell_eject
+sound,fly_thundergun_cell_replace
+sound,fly_thundergun_cell_lock
+sound,fly_thundergun_cell_on
+weapon,t5_thundergun_mp
+weapon,t5_thundergunupgraded_mp

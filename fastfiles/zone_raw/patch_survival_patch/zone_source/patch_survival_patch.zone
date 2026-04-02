@@ -53,6 +53,9 @@ xmodel,hyena
 material,,navbar_edge
 material,,navbar_tick
 
+menu,so_survival_dvar_reset
+menulist,ui/scriptmenus/so_survival_dvar_reset.menu
+
 menulist,ui_mp/custom_menus.txt
 
 scriptfile,1571

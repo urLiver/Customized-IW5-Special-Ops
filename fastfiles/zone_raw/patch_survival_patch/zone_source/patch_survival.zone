@@ -609,5 +609,3 @@ scriptfile,70
 scriptfile,animscripts/riotshield/riotshield
 rawfile,animtrees/animated_props.atr
 rawfile,animtrees/chicken.atr
-menu,so_survival_dvar_reset
-menulist,ui/scriptmenus/so_survival_dvar_reset.menu

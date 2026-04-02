@@ -13,7 +13,7 @@ Small Project to bring some more fun and longevity into the IW5 Special Ops Game
   
 ## How to Install
 1. Make a backup of your english and main folder from you Game.
-2. Download this File ( Uploaded on Mediafire due to Github Max File Size Limit ) [iw_02.iwd](https://www.mediafire.com/file/d6vojn8tsjx24p6/iw_02.iwd/file) and Place it in your main folder.
+2. Copy the content of iwd into your main folder.
 3. Copy any content of the zone_out subfolders into the english folder.
 4. Start the Game.
 
@@ -85,4 +85,5 @@ Small Project to bring some more fun and longevity into the IW5 Special Ops Game
   - [ ] Remove Pause from Menu or Turn Prestige Textures into not animated
   - [ ] Add in teaminfo such as money and health 
   - [ ] Move materials and images into specialops_patch
+  - [ ] Custom menu opend by main selection that allows to set certain dvars like fov, gun position and so on
   - [x] Randome chance that the easy enemies become someone else

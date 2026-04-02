@@ -12,7 +12,6 @@ id,item_name,type,price,locationstring,locationstring_description,material,level
 21,iw5_skorpion_mp,weapon,1250,WEAPON_SKORPION,,,0,,,1,machinepistol
 22,iw5_mp9_mp,weapon,1250,WEAPON_MP9,,,0,,,1,machinepistol
 23,iw5_fmg9_mp,weapon,1250,WEAPON_FMG9,,,0,,,1,machinepistol
-23,iw5_fmg9_mp,weapon,1250,WEAPON_FMG9,,,0,,,1,machinepistol
 24,iw4_pp2000_mp,weapon,1250,WEAPON_PP2000,,,0,,,1,machinepistol
 40,iw5_mp5_mp,weapon,2250,WEAPON_MP5K,,,0,,,1,smg
 41,iw5_ump45_mp,weapon,2250,WEAPON_UMP45,,,0,,,1,smg
