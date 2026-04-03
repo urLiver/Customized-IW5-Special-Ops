@@ -2,11 +2,12 @@
 
 #define CURRENT_MENU "survival_armory_weapon_lmg"
 #define OPTION_COUNT 6
+#define BASE_IDX 60
 
-#define MENU_POS ( 240 - ( 24 * ( OPTION_COUNT + 1 ) + 22 ) / 2 )
+#define MENU_POS _MENU_POS( OPTION_COUNT )
 
-#define Shop_BuyButton( current_idx, armory_idx, anim_name ) \
-    _Shop_BuyWeaponButton( ( MENU_POS + 36 ), CURRENT_MENU, current_idx, armory_idx, anim_name );
+#define Shop_BuyButtonWithIcon( current_idx, icon_idx, anim_name ) \
+    _Shop_BuyButtonWithIcon( ( MENU_POS + 36 ), CURRENT_MENU, current_idx, icon_idx, ( current_idx + BASE_IDX ), anim_name );
 
 #define Shop_Begin( display_text ) \
     _Shop_Begin( MENU_POS, CURRENT_MENU, display_text ); 
@@ -22,12 +23,12 @@
     {
         Shop_SubFrame;
         Shop_Begin( "@SO_SURVIVAL_ARMORY_WEAPON_LMG_GROUP" );
-        Shop_BuyButton( 0, 60, "weapons_lmg_0" );
-        Shop_BuyButton( 1, 61, "weapons_lmg_1" );
-        Shop_BuyButton( 2, 62, "weapons_lmg_2" );
-        Shop_BuyButton( 3, 63, "weapons_lmg_3" );
-        Shop_BuyButton( 4, 64, "weapons_lmg_4" );
-        Shop_BuyButton( 5, 65, "weapons_lmg_5" );
+        Shop_BuyButtonWithIcon( 0, ICON_MW3, "weapons_lmg_0" );
+        Shop_BuyButtonWithIcon( 1, ICON_MW3, "weapons_lmg_1" );
+        Shop_BuyButtonWithIcon( 2, ICON_MW3, "weapons_lmg_2" );
+        Shop_BuyButtonWithIcon( 3, ICON_MW3, "weapons_lmg_3" );
+        Shop_BuyButtonWithIcon( 4, ICON_MW3, "weapons_lmg_4" );
+        Shop_BuyButtonWithIcon( 5, ICON_MW2, "weapons_lmg_5" );
         Shop_End( 6 );
     }
 }

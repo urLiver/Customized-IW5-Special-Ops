@@ -14,6 +14,10 @@ weapon,iw5_striker_mp
 weapon,iw5_m16_mp
 weapon,rpg_survival
 
+image,logo_mw3
+image,logo_mw2
+image,logo_cod4
+image,logo_bo1
 image,rank_prestige_1
 image,rank_prestige_2
 image,rank_prestige_3
@@ -33,6 +37,11 @@ image,rank_prestige_16
 image,rank_prestige_17
 image,rank_prestige_18
 image,rank_prestige_19
+
+material,logo_mw3
+material,logo_mw2
+material,logo_cod4
+material,logo_bo1
 material,rank_prestige_1
 material,rank_prestige_2
 material,rank_prestige_3

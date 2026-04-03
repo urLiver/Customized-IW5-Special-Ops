@@ -4,10 +4,25 @@
 #ifndef _STYLE
     #define _STYLE 1
 
-    #define _Shop_BuyWeaponButton( _y, current_menu, position_idx, armory_idx, anim_name ) \
+    #define _SCROLLER_SIZE      17
+    #define _OPTION_SIZE        18
+    #define _ICON_SIZE          ( _OPTION_SIZE - 4 )
+    #define _ICON_SPACE         2
+    #define _TITLE_FONT_SIZE    0.375
+    #define _OPTION_FONT_SIZE   0.3
+
+    #define ICON_MW3            0
+    #define ICON_MW2            1
+    #define ICON_COD4           2
+    #define ICON_BO1            3
+
+    #define _MENU_POS( option_count ) \
+        ( 240 - ( _OPTION_SIZE * ( option_count + 1 ) + _SCROLLER_SIZE ) / 2 )
+
+    #define _Shop_BuyButtonWithIcon( _y, current_menu, position_idx, icon_idx, armory_idx, anim_name ) \
         itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 ) 260 24 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 _OPTION_SIZE 4 4 \
                 style                       1 \
                 type                        1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -30,7 +45,7 @@
             } \
             itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 ) 260 22 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 _SCROLLER_SIZE 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -40,7 +55,7 @@
             } \
             itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 + 22 ) 260 6 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE + _SCROLLER_SIZE ) 260 6 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -50,14 +65,14 @@
             } \
             itemDef \
             { \
-                rect                        195 ( _y + position_idx * 24 ) 250 22 4 4 \
+                rect                        ( 197 + _ICON_SIZE ) ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
                 forecolor                   1 1 1 1 \
                 textfont                    FONT_SMALL \ 
                 textalign                   ALIGN_MIDDLE_LEFT \
-                textscale                   0.375 \
+                textscale                   _OPTION_FONT_SIZE \
                 exp text                    "@" + tablelookup( "sp/survival_armories.csv", 0, armory_idx, 4 ); \
                 exp forecolor r             ( select( levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ), 0.5, 1 ) ) \
                 exp forecolor g             ( select( levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ), 0.5, 1 ) ) \
@@ -65,14 +80,14 @@
             } \
             itemDef \
             { \
-                rect                        195 ( _y + position_idx * 24 ) 250 22 4 4 \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) && levelforexperienceso( getplayerdata( "experience" ) ) >= int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) ); \
                 forecolor                   0.7 1 0.7 1 \
                 textfont                    FONT_SMALL \ 
                 textalign                   ALIGN_MIDDLE_RIGHT \
-                textscale                   0.375 \
+                textscale                   _OPTION_FONT_SIZE \
                 exp text                    ( locstring( "@SO_SURVIVAL_CREDITS", int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ) ) ) \ 
                 exp forecolor r             ( select( int( getplayerdata( "surHUD_credits" ) ) >= int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ), 0.7, 1 ) ) \
                 exp forecolor g             ( select( int( getplayerdata( "surHUD_credits" ) ) >= int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ), 1, 0.7 ) ) \
@@ -80,21 +95,118 @@
             } \
             itemDef \
             { \
-                rect                        195 ( _y + position_idx * 24 ) 250 22 4 4 \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) && levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) ); \
                 forecolor                   1 0.7 0.7 1 \
                 textfont                    FONT_SMALL \ 
                 textalign                   ALIGN_MIDDLE_RIGHT \
-                textscale                   0.375 \
+                textscale                   _OPTION_FONT_SIZE \
+                exp text                    ( locstring( "@SO_SURVIVAL_ARMORY_LOCKED_LV", ( int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) + 1 ) ) ); \
+            } \
+            itemDef \
+            { \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE + _ICON_SPACE ) _ICON_SIZE _ICON_SIZE 4 4 \
+                decoration                  \
+                style                       1 \
+                visible                     when( menuistopmost( current_menu ) ); \
+                forecolor                   1 1 1 1 \
+                backcolor                   1 1 1 1 \
+                exp material                ( string( tablelookup("sp/icon_armories.csv", 0, icon_idx, 1 ) ) ) \
+            }
+
+    #define _Shop_BuyButton( _y, current_menu, position_idx, armory_idx, anim_name ) \
+        itemDef \
+            { \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 _OPTION_SIZE 4 4 \
+                style                       1 \
+                type                        1 \
+                visible                     when( menuistopmost( current_menu ) ); \
+                background                  "white" \
+                backcolor                   1 1 1 1 \
+                disabled                    when( levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) ) \
+                exp backcolor r             ( select( position_idx % 2, 0.2275, 0.2824 ) ) \
+                exp backcolor g             ( select( position_idx % 2, 0.2392, 0.2941 ) ) \
+                exp backcolor b             ( select( position_idx % 2, 0.2275, 0.2824 ) ) \ 
+                Animation_Focus( anim_name ); \
+                action \
+                { \
+                    play "mouse_click"; \
+                    if( int( getplayerdata( "surHUD_credits" ) ) >= int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ) ) \
+                    { \
+                        setLocalVarString purchase_item ( "purchase_" + armory_idx ); \
+                        scriptmenuresponse localVarString( purchase_item ); \
+                    } \
+                } \
+            } \
+            itemDef \
+            { \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 _SCROLLER_SIZE 4 4 \
+                decoration                  \
+                style                       1 \
+                visible                     when( menuistopmost( current_menu ) ); \
+                backcolor                   0.7 1 0.7 0.85 \
+                background                  "navbar_selection_bar" \
+                exp backcolor a             ( Animation_Get( anim_name, 250 ) ) \
+            } \
+            itemDef \
+            { \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE + _SCROLLER_SIZE ) 260 6 4 4 \
+                decoration                  \
+                style                       1 \
+                visible                     when( menuistopmost( current_menu ) ); \
+                backcolor                   1 1 1 1 \
+                background                  "navbar_selection_bar_shadow" \
+                exp backcolor a             ( Animation_Get( anim_name, 250 ) ) \
+            } \
+            itemDef \
+            { \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
+                decoration                  \
+                style                       1 \
+                visible                     when( menuistopmost( current_menu ) ); \
+                forecolor                   1 1 1 1 \
+                textfont                    FONT_SMALL \ 
+                textalign                   ALIGN_MIDDLE_LEFT \
+                textscale                   _OPTION_FONT_SIZE \
+                exp text                    "@" + tablelookup( "sp/survival_armories.csv", 0, armory_idx, 4 ); \
+                exp forecolor r             ( select( levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ), 0.5, 1 ) ) \
+                exp forecolor g             ( select( levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ), 0.5, 1 ) ) \
+                exp forecolor b             ( select( levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ), 0.5, 1 ) ) \
+            } \
+            itemDef \
+            { \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
+                decoration                  \
+                style                       1 \
+                visible                     when( menuistopmost( current_menu ) && levelforexperienceso( getplayerdata( "experience" ) ) >= int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) ); \
+                forecolor                   0.7 1 0.7 1 \
+                textfont                    FONT_SMALL \ 
+                textalign                   ALIGN_MIDDLE_RIGHT \
+                textscale                   _OPTION_FONT_SIZE \
+                exp text                    ( locstring( "@SO_SURVIVAL_CREDITS", int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ) ) ) \ 
+                exp forecolor r             ( select( int( getplayerdata( "surHUD_credits" ) ) >= int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ), 0.7, 1 ) ) \
+                exp forecolor g             ( select( int( getplayerdata( "surHUD_credits" ) ) >= int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ), 1, 0.7 ) ) \
+                exp forecolor b             ( select( int( getplayerdata( "surHUD_credits" ) ) >= int( tablelookup( "sp/survival_armories.csv", 0, armory_idx, 3 ) ), 0.7, 0.7 ) ) \ 
+            } \
+            itemDef \
+            { \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
+                decoration                  \
+                style                       1 \
+                visible                     when( menuistopmost( current_menu ) && levelforexperienceso( getplayerdata( "experience" ) ) < int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) ); \
+                forecolor                   1 0.7 0.7 1 \
+                textfont                    FONT_SMALL \ 
+                textalign                   ALIGN_MIDDLE_RIGHT \
+                textscale                   _OPTION_FONT_SIZE \
                 exp text                    ( locstring( "@SO_SURVIVAL_ARMORY_LOCKED_LV", ( int( tablelookup("sp/survival_armories.csv", 0, armory_idx, 7 ) ) + 1 ) ) ); \
             }
 
     #define _Shop_PageButton( _y, current_menu, position_idx, display_text, menu, anim_name ) \
         itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 ) 260 24 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 _OPTION_SIZE 4 4 \
                 style                       1 \
                 type                        1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -112,7 +224,7 @@
             } \
             itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 ) 260 22 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 _SCROLLER_SIZE 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -122,7 +234,7 @@
             } \
             itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 + 22 ) 260 6 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE + _SCROLLER_SIZE ) 260 6 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -132,14 +244,14 @@
             } \
             itemDef \
             { \
-                rect                        195 ( _y + position_idx * 24 ) 250 22 4 4 \
+                rect                        195 ( _y + position_idx * _OPTION_SIZE ) 250 _SCROLLER_SIZE 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
                 forecolor                   1 1 1 1 \
                 textfont                    FONT_SMALL \ 
                 textalign                   ALIGN_MIDDLE_LEFT \
-                textscale                   0.375 \
+                textscale                   _OPTION_FONT_SIZE \
                 exp text                    ( display_text ) \
             }
 
@@ -181,7 +293,8 @@
                 forecolor                   1 1 1 1 \
                 textfont                    FONT_BOLD \ 
                 textalign                   ALIGN_MIDDLE_LEFT \
-                textscale                   0.375 \
+                textscale                   _TITLE_FONT_SIZE \
+                textstyle                   3 \
                 exp text                    ( display_text ) \
             } \
             itemDef \
@@ -222,7 +335,7 @@
     #define _Shop_End( _y, current_menu, position_idx ) \
             itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 ) 260 6 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 6 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \
@@ -232,7 +345,7 @@
             } \
             itemDef \
             { \
-                rect                        190 ( _y + position_idx * 24 ) 260 6 4 4 \
+                rect                        190 ( _y + position_idx * _OPTION_SIZE ) 260 6 4 4 \
                 decoration                  \
                 style                       1 \
                 visible                     when( menuistopmost( current_menu ) ); \

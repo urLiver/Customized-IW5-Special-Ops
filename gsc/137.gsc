@@ -27,15 +27,27 @@ thundergun_shoot()
     }
 }
 
-vector_scale(vec, scale)
+vector_scale( vec, scale )
 {
-	vec = (vec * scale);
+	vec = ( vec * scale );
 	return vec;
+}
+
+cap( cur, max )
+{
+    if( cur <= max )
+    {
+        return cur;
+    }
+    else
+    {
+        return max;
+    }
 }
 
 thundergun_shoot_target( target, view_pos, player )
 {
-	forward_view_angles = anglestoforward( player GetTagAngles( "tag_weapon_left" ) );
+	forward_view_angles = anglestoforward( player.angles );
 	end_pos = view_pos + vector_scale( forward_view_angles, 1200 );
 
     test_origin = target GetTagOrigin( "j_spine4" );
@@ -65,11 +77,11 @@ thundergun_shoot_target( target, view_pos, player )
 
     if( test_range_squared < 230404 )
     {
-        target DoDamage( target.health + 666, player.origin, player );
+        target DoDamage( cap( target.health + 666, 1000 ), player.origin, player );
     }
     else
     {
-        target DoDamage( target.health * 0.33, player.origin, player );
+        target DoDamage( cap( target.health * 0.33, 1000 ), player.origin, player );
     }
 }
 

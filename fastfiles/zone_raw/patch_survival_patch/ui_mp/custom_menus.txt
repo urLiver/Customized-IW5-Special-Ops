@@ -5,7 +5,6 @@
     loadMenu { "ui_mp/survival_armory_weapon_asr.menu" }
     loadMenu { "ui_mp/survival_armory_weapon_smg.menu" }
     loadMenu { "ui_mp/survival_armory_weapon_lmg.menu" }
-    loadMenu { "ui_mp/survival_armory_weapon_sniper.menu" }
     loadMenu { "ui_mp/survival_armory_weapon_shotgun.menu" }
     loadMenu { "ui_mp/survival_armory_equipment.menu" }
     loadMenu { "ui_mp/survival_armory_airsupport.menu" }
