@@ -48,22 +48,22 @@ AA12 Clip Size From 8 to 10 and Max Ammo From 32 to 40
  
 ### Weapons Added
 #### IW4
-AK47
-Beretta
-Beretta 393
-Colt 45
-Colt Anaconda
-Fal
-Kriss Vector
-M4
-M1014
-MG4
-MP5K
-PP2000
-RPD
-SCAR
-TMP
-UZI
+AK47,
+Beretta,
+Beretta 393,
+Colt 45,
+Colt Anaconda,
+Fal,
+Kriss Vector,
+M4,
+M1014,
+MG4,
+MP5K,
+PP2000,
+RPD,
+SCAR,
+TMP,
+UZI,
 M79
 
 #### T5
