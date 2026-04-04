@@ -29,8 +29,7 @@ Slvr11
 ZECxR3ap3r
 
 ### Testing, Ideas, Help
-sevdabeast
-
+sevdabeast  
 UwUneedsBunni
 
 ### Maintainers
@@ -43,11 +42,9 @@ Maps Village, Arkaden and Mission Crash, due to too many loaded sounds
 ## So Far Done
 
 ### Weapon Changes
-M16 From 3x Burst to Full Auto
-
-RPG Max Ammo From 3 to 6
-
-AA12 Clip Size From 8 to 10 and Max Ammo From 32 to 40
+M16 From 3x Burst to Full Auto  
+RPG Max Ammo From 3 to 6  
+AA12 Clip Size From 8 to 10 and Max Ammo From 32 to 40  
  
 ### Weapons Added
 #### IW4
@@ -73,12 +70,12 @@ M79
 Thundergun ( Not Buyable for now)
 
 ### Other Changes
-Reworked Main Menu ( Missing Settings Button )
-Reworked Gamemode Selection for Main Menu
-Cleaner Radar
-Cleaner Weapon Info
-Updated Perk, Self Revive, Armor Display
-Updated Streaks Display 
-Reworked Shop Uis and Prices
-Increased Level Cap
-Added Extra Model for Easy Enemies and Dogs
+Reworked Main Menu ( Missing Settings Button )  
+Reworked Gamemode Selection for Main Menu  
+Cleaner Radar  
+Cleaner Weapon Info  
+Updated Perk, Self Revive, Armor Display  
+Updated Streaks Display   
+Reworked Shop Uis and Prices  
+Increased Level Cap  
+Added Extra Model for Easy Enemies and Dogs  
