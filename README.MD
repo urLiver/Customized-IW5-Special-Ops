@@ -30,6 +30,7 @@ ZECxR3ap3r
 
 ### Testing, Ideas, Help
 sevdabeast
+
 UwUneedsBunni
 
 ### Maintainers
@@ -43,7 +44,9 @@ Maps Village, Arkaden and Mission Crash, due to too many loaded sounds
 
 ### Weapon Changes
 M16 From 3x Burst to Full Auto
+
 RPG Max Ammo From 3 to 6
+
 AA12 Clip Size From 8 to 10 and Max Ammo From 32 to 40
  
 ### Weapons Added
