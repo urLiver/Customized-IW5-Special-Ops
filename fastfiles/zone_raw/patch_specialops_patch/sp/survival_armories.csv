@@ -36,7 +36,7 @@ id,item_name,type,price,locationstring,locationstring_description,material,level
 87,iw5_cm901_mp,weapon,3500,WEAPON_CM901,,,0,,,1,assaultrifle
 88,iw5_mk14_mp,weapon,3500,WEAPON_MK14,,,0,,,1,assaultrifle
 89,iw5_type95_mp,weapon,3500,WEAPON_TYPE95,,,0,,,1,assaultrifle
-90,iw4_m4silencer_mp,weapon,3500,WEAPON_M4SILENCED,,,0,,,1,assaultrifle
+90,iw4_m4_mp,weapon,3500,WEAPON_M4_IW4,,,0,,,1,assaultrifle
 100,iw5_1887_mp,weapon,2000,WEAPON_MODEL1887,,,0,,,1,shotgun
 101,iw5_usas12_mp,weapon,2000,WEAPON_USAS12,,,0,,,1,shotgun
 102,iw5_spas12_mp,weapon,2000,WEAPON_SPAS12,,,0,,,1,shotgun

@@ -710,8 +710,7 @@ xanim,,viewmodel_m4_eotech_ads_up
 xanim,,viewmodel_m4_eotech_ads_down
 sound,weap_m4carbine_new_fire_plr
 sound,weap_m4carbine_new_fire_npc
-weapon,iw4_m4reflex_mp
-weapon,iw4_m4silencer_mp
+weapon,iw4_m4_mp
 xanim,,viewmodel_m4_shotgun_fire
 xanim,,viewmodel_m4_shotgun_shotty_fire
 xanim,,viewmodel_m4_shotgun_idle
@@ -751,7 +750,6 @@ tracer,,pistol
 sound,weap_m9_new_fire_plr
 sound,weap_m9_new_fire_npc
 weapon,iw4_beretta_mp
-weapon,iw4_berettaupgraded_mp
 
 xanim,,viewmodel_coltanaconda_idle
 xanim,,viewmodel_coltanaconda_idle_r
@@ -780,14 +778,12 @@ xanim,,viewmodel_coltanaconda_ADS_down
 sound,weap_anaconda_new_fire_plr
 sound,weap_anaconda_new_fire_npc
 weapon,iw4_coltanaconda_mp
-weapon,iw4_coltanacondaupgraded_mp
 
 sound,weap_m1911colt45_new_chamber_plr
 sound,weap_m1911colt45_new_clift_plr
 sound,weap_m1911colt45_new_clipin_plr
 sound,weap_m1911colt45_new_clipout_plr
 weapon,iw4_colt45_mp
-weapon,iw4_colt45upgraded_mp
 
 image,,weapon_pp2000
 material,,weapon_pp2000
@@ -857,8 +853,6 @@ xmodel,,weapon_mini_uzi_clip
 sound,weap_pp2000_new_fire_plr
 sound,weap_pp2000_new_fire_npc
 weapon,iw4_pp2000_mp
-weapon,iw4_pp2000upgraded_mp
-weapon,iw4_pp2000upgraded2_mp
 
 physcollmap,,weapon_rpd
 xmodel,viewmodel_rpd
@@ -879,7 +873,6 @@ xanim,viewmodel_rpd_grip_putaway
 xanim,viewmodel_rpd_grip_sprint_in
 xanim,viewmodel_rpd_grip_sprint_loop
 xanim,viewmodel_rpd_grip_sprint_out
-weapon,iw4_rpdupgraded_mp
 
 fx,,impacts/dudimpact_m203
 xmodel,,projectile_m203grenade
@@ -900,14 +893,11 @@ material,,mc/mtl_weapon_trinium_sight_glow
 sound,weap_kriss_new_fire_plr
 sound,weap_kriss_new_fire_npc
 weapon,iw4_kriss_mp
-weapon,iw4_krissupgraded_mp
-weapon,iw4_krissupgraded2_mp
 
 physcollmap,,weapon_benelli_super_90
 xmodel,,weapon_benelli_super_90
 xmodel,viewmodel_benelli_m4
 weapon,iw4_m1014_mp
-weapon,iw4_m1014upgraded_mp
 
 sound,weap_thundergun_fire_npc
 sound,weap_thundergun_fire_plr
@@ -917,4 +907,3 @@ sound,fly_thundergun_cell_replace
 sound,fly_thundergun_cell_lock
 sound,fly_thundergun_cell_on
 weapon,t5_thundergun_mp
-weapon,t5_thundergunupgraded_mp

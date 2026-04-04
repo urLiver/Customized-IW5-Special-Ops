@@ -1,10 +1,10 @@
 WEAPONFILE\displayName\WEAPON_M4_CARBINE\AIOverlayDescription\\modeName\\playerAnimType\autorifle\gunModel\viewmodel_m4\gunModel2\\gunModel3\\gunModel4\\gunModel5\\gunModel6\\gunModel7\\gunModel8\\gunModel9\\gunModel10\\gunModel11\\gunModel12\\gunModel13\\gunModel14\\gunModel15\\gunModel16\\handModel\viewmodel_base_viewhands\hideTags\tag_acog_2
 tag_eotech
+tag_red_dot
 tag_heartbeat
 tag_m203
 tag_shotgun
 tag_silencer
-tag_sight_on
 tag_thermal_scope\notetrackSoundMap\weap_m4carbine_clipout_plr weap_m4carbine_clipout_plr
 weap_m4carbine_clipin_plr weap_m4carbine_clipin_plr
 weap_m4carbine_chamber_close_plr weap_m4carbine_chamber_close_plr
