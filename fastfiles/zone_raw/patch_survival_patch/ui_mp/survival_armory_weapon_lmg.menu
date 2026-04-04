@@ -1,7 +1,7 @@
 #include "ui_mp/_style.inc"
 
 #define CURRENT_MENU "survival_armory_weapon_lmg"
-#define OPTION_COUNT 6
+#define OPTION_COUNT 7
 #define BASE_IDX 60
 
 #define MENU_POS _MENU_POS( OPTION_COUNT )
@@ -29,6 +29,7 @@
         Shop_BuyButtonWithIcon( 3, ICON_MW3, "weapons_lmg_3" );
         Shop_BuyButtonWithIcon( 4, ICON_MW3, "weapons_lmg_4" );
         Shop_BuyButtonWithIcon( 5, ICON_MW2, "weapons_lmg_5" );
-        Shop_End( 6 );
+        Shop_BuyButtonWithIcon( 6, ICON_MW2, "weapons_lmg_6" );
+        Shop_End( 7 );
     }
 }
