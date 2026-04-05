@@ -2,7 +2,7 @@
     menuDef
     {
         name                        "compassv2"
-        rect                        2 -12 640 480 4 4
+        rect                        2 -16 640 480 4 4
         fadeClamp                   1
         fadeCycle                   1
         fadeAmount                  0.1

@@ -2,7 +2,7 @@
     menuDef
     {
         name                        "weaponinfo"
-        rect                        2 -16 640 480 4 4
+        rect                        2 -20 640 480 4 4
         fadeClamp                   1
         fadeCycle                   1
         fadeAmount                  0.1
@@ -11,7 +11,7 @@
         itemDef
         {
             name                        "weaponbar_line"
-            rect                        -349.333 -54.6667 261.333 56 10 10
+            rect                        -218.333 -54.6667 131.333 56 10 10
             style                       3
             decoration                  
             visible                     1

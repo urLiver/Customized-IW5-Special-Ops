@@ -2,7 +2,7 @@
     menuDef
     {
         name                        "minimap"
-        rect                        2 2 100 100 8 8
+        rect                        0 0 100 100 8 8
         fadeClamp                   1
         fadeCycle                   1
         fadeAmount                  0.1
@@ -11,7 +11,7 @@
         itemDef
         {
             name                        "minimap_border"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
 			visible 1
 			border 1
 			bordersize 0.666667
@@ -22,7 +22,7 @@
         itemDef
         {
             name                        "minimap_map"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   159
@@ -32,7 +32,7 @@
         itemDef
         {
             name                        "minimap_vehicles"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   155
@@ -41,7 +41,7 @@
         itemDef
         {
             name                        "minimap_sentries"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   165
@@ -51,7 +51,7 @@
         itemDef
         {
             name                        "minimap_actors"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   153
@@ -62,7 +62,7 @@
         itemDef
         {
             name                        "minimap_friendlies"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   158
@@ -71,7 +71,7 @@
         itemDef
         {
             name                        "minimap_player"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   150
@@ -81,7 +81,7 @@
         itemDef
         {
             name                        "minimap_objectives"
-            rect                        0 0 100 100 0 0
+            rect                        2 2 100 100 8 8
             type                        8
             visible                     1
             ownerdraw                   152

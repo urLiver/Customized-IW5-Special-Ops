@@ -6,7 +6,7 @@
         fadeClamp                   1
         fadeCycle                   1
         fadeAmount                  0.1
-        visible                     when( player("number") + 1 != dvarint( "ui_remotemissile_playernum" ) && ! dvarbool( "hud_missionFailed" ) && dvarstring( "createfx" ) != "on" && ! flashbanged() && ! usingvehicle() && ! ui_active() && ! dvarbool( "actionSlotsHide" ) && ! dvarint( "ammoCounterHide" ) && ! ( gamemsgwndactive( 2 ) && ! dvarbool( "so_survival" ) ) );
+        visible                     when( player( "number" ) + 1 != dvarint( "ui_remotemissile_playernum" ) && ! dvarbool( "hud_missionFailed" ) && dvarstring( "createfx" ) != "on" && ! flashbanged() && ! usingvehicle() && ! ui_active() && ! dvarbool( "actionSlotsHide" ) && ! dvarint( "ammoCounterHide" ) && ! ( gamemsgwndactive( 2 ) && ! dvarbool( "so_survival" ) ) );
        
         itemDef
         {
