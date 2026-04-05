@@ -9,8 +9,6 @@ include,common_survival
 scriptfile,aitype/enemy_so_easy
 scriptfile,aitype/enemy_dog
 
-weapon,iw5_aa12_mp
-weapon,iw5_striker_mp
 weapon,iw5_m16_mp
 weapon,rpg_survival
 
@@ -61,6 +59,8 @@ material,rank_prestige_16
 material,rank_prestige_17
 material,rank_prestige_18
 material,rank_prestige_19
+
+stringtable,sp/survival_waves.csv
 
 ignore,common
 ignore,ignores

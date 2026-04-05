@@ -948,6 +948,32 @@ weapon,iw4_beretta_mp
 fx,,muzzleflashes/mp5_flshview_a
 fx,,muzzleflashes/mp5_flshview_b
 fx,,muzzleflashes/mp5_flash_view
+xanim,viewmodel_p90_classic_sprint_in
+xanim,viewmodel_p90_classic_sprint_loop
+xanim,viewmodel_p90_classic_sprint_out
+sound,weap_fnp90_new_fire_plr
+sound,weap_fnp90_new_fire_npc
+weapon,iw4_p90_mp
+xanim,viewmodel_p90_fire_l
+xanim,viewmodel_p90_fire_r
+xanim,viewmodel_p90_idle_l
+xanim,viewmodel_p90_idle_r
+xanim,viewmodel_p90_first_time_pullout_l
+xanim,viewmodel_p90_first_time_pullout_r
+xanim,viewmodel_p90_pullout_l
+xanim,viewmodel_p90_pullout_r
+xanim,viewmodel_p90_putaway_l
+xanim,viewmodel_p90_putaway_r
+xanim,viewmodel_p90_reload_l
+xanim,viewmodel_p90_reload_r
+xanim,viewmodel_p90_reload_empty_l
+xanim,viewmodel_p90_reload_empty_r
+xanim,viewmodel_p90_sprint_in_l
+xanim,viewmodel_p90_sprint_in_r
+xanim,viewmodel_p90_sprint_loop_l
+xanim,viewmodel_p90_sprint_loop_r
+xanim,viewmodel_p90_sprint_out_l
+xanim,viewmodel_p90_sprint_out_r
 
 xanim,viewmodel_miniuzi_sprint_in
 xanim,viewmodel_miniuzi_sprint_loop
@@ -964,6 +990,24 @@ xanim,viewmodel_miniuzi_reload
 sound,weap_miniuzi_new_fire_plr
 sound,weap_miniuzi_new_fire_npc
 weapon,iw4_uzi_mp
+
+xanim,viewmodel_aa12_classic_sprint_in
+xanim,viewmodel_aa12_classic_sprint_loop
+xanim,viewmodel_aa12_classic_sprint_out
+fx,,muzzleflashes/aa12_flash_view
+fx,,shellejects/shotgun_resting
+material,,mc/mtl_fx_shotgun_shell_alpha
+xmodelsurfs,,fx_shotgun_shell_blur10
+xmodel,,fx_shotgun_shell_blur
+fx,,shellejects/shotgun_view_blurred01
+fx,,shellejects/shotgun_view_blurred02
+fx,,shellejects/shotgun_view_blurred03
+fx,,shellejects/shotgun_view
+weapon,iw4_aa12_mp
+xanim,,viewmodel_aa12_grip_pullout_quick
+xanim,viewmodel_aa12_classic_grip_sprint_in
+xanim,viewmodel_aa12_classic_grip_sprint_loop
+xanim,viewmodel_aa12_classic_grip_sprint_out
 
 xanim,viewmodel_ak47_tac_classic_ads_down
 xanim,viewmodel_ak47_tac_classic_ads_up
@@ -1007,13 +1051,20 @@ sound,weap_mg4_new_fire_plr
 sound,weap_mg4_new_fire_npc
 weapon,iw4_mg4_mp
 
+
 xanim,viewmodel_model1887_classic_sprint_in
 xanim,viewmodel_model1887_classic_sprint_loop
 xanim,viewmodel_model1887_classic_sprint_out
 
+weapon,iw4_model1887_mp
+
 sound,weap_mp5_new_fire_plr
 sound,weap_mp5_new_fire_npc
 weapon,iw4_mp5k_mp
+
+sound,weap_ranger_new_fire_plr
+sound,weap_ranger_new_fire_npc
+weapon,iw4_ranger_mp
 
 image,,~weapon_scar_l_spc-r47g47b47&~6f808f9a
 image,,weapon_scar_l_nml
@@ -1022,6 +1073,8 @@ material,,mc/mtl_weapon_scar_l
 sound,weap_scar_new_fire_plr
 sound,weap_scar_new_fire_npc
 weapon,iw4_scar_mp
+
+weapon,iw4_striker_mp
 
 weapon,iw4_tmp_mp
 

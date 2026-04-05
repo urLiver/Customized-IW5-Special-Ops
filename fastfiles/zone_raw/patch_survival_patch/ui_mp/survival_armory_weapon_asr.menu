@@ -1,7 +1,7 @@
 #include "ui_mp/_style.inc"
 
 #define CURRENT_MENU "survival_armory_weapon_asr"
-#define OPTION_COUNT 13
+#define OPTION_COUNT 11
 #define BASE_IDX 80
 
 #define MENU_POS _MENU_POS( OPTION_COUNT )
@@ -24,18 +24,16 @@
         Shop_SubFrame;
         Shop_Begin( "@SO_SURVIVAL_ARMORY_WEAPON_ASR_GROUP" );
         Shop_BuyButtonWithIcon( 0, ICON_MW3, "weapons_asr_0" );
-        Shop_BuyButtonWithIcon( 1, ICON_MW3, "weapons_asr_1" );
+        Shop_BuyButtonWithIcon( 1, ICON_MW2, "weapons_asr_1" );
         Shop_BuyButtonWithIcon( 2, ICON_MW3, "weapons_asr_2" );
-        Shop_BuyButtonWithIcon( 3, ICON_MW3, "weapons_asr_3" );
+        Shop_BuyButtonWithIcon( 3, ICON_MW2, "weapons_asr_3" );
         Shop_BuyButtonWithIcon( 4, ICON_MW3, "weapons_asr_4" );
-        Shop_BuyButtonWithIcon( 5, ICON_MW3, "weapons_asr_5" );
+        Shop_BuyButtonWithIcon( 5, ICON_MW2, "weapons_asr_5" );
         Shop_BuyButtonWithIcon( 6, ICON_MW3, "weapons_asr_6" );
         Shop_BuyButtonWithIcon( 7, ICON_MW3, "weapons_asr_7" );
         Shop_BuyButtonWithIcon( 8, ICON_MW3, "weapons_asr_8" );
-        Shop_BuyButtonWithIcon( 9, ICON_MW2, "weapons_asr_9" );
+        Shop_BuyButtonWithIcon( 9, ICON_MW3, "weapons_asr_9" );
         Shop_BuyButtonWithIcon( 10, ICON_MW2, "weapons_asr_10" );
-        Shop_BuyButtonWithIcon( 11, ICON_MW2, "weapons_asr_11" );
-        Shop_BuyButtonWithIcon( 12, ICON_MW2, "weapons_asr_12" );
-        Shop_End( 13 );
+        Shop_End( 11 );
     }
 }

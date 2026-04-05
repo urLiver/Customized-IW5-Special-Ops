@@ -94,6 +94,11 @@ watch_weapon_fire()
     {
         self waittill( "weapon_fired", weapon );
 
+        if( IsSubStr( weapon, "_upgraded" ) )
+        {
+            self playsound( "whizby_far_05_L" );
+        }
+
         switch( weapon )
         {
             case "t5_thundergun_mp":

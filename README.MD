@@ -19,6 +19,11 @@ Small Project to bring some more fun and longevity into the IW5 Special Ops Game
 3. Get the aizombies_misc.ff and iw4_weapons.ff [from Slvr11 AIZombies Repo](https://github.com/Slvr11/AIZombiesSupreme-PlutoIW5) and place them in your english folder.
 4. Modify any of the build.bat scripts so the filepath is correct and run them.
 
+  
+## Known Issues
+Maps Village, Arkaden and Mission Crash, due to too many loaded sounds
+Weapons that are not iw5 when dropped dont display a pickup text
+
 
 ## Credits
 
@@ -34,10 +39,6 @@ UwUneedsBunni
 
 ### Maintainers
 urLiver
-  
-## Known Issues
-Maps Village, Arkaden and Mission Crash, due to too many loaded sounds
-
 
 ## So Far Done
 
@@ -45,29 +46,7 @@ Maps Village, Arkaden and Mission Crash, due to too many loaded sounds
 M16 From 3x Burst to Full Auto  
 RPG Max Ammo From 3 to 6  
 AA12 Clip Size From 8 to 10 and Max Ammo From 32 to 40  
- 
-### Weapons Added
-#### IW4
-AK47,
-Beretta,
-Beretta 393,
-Colt 45,
-Colt Anaconda,
-Fal,
-Kriss Vector,
-M4,
-M1014,
-MG4,
-MP5K,
-PP2000,
-RPD,
-SCAR,
-TMP,
-UZI,
-M79
-
-#### T5
-Thundergun ( Not Buyable for now)
+Weapons Changed Up and Added
 
 ### Other Changes
 Reworked Main Menu ( Missing Settings Button )  

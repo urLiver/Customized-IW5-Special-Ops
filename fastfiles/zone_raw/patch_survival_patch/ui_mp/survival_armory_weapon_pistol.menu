@@ -1,7 +1,7 @@
 #include "ui_mp/_style.inc"
 
 #define CURRENT_MENU "survival_armory_weapon_pistol"
-#define OPTION_COUNT 10
+#define OPTION_COUNT 7
 #define BASE_IDX 0
 
 #define MENU_POS _MENU_POS( OPTION_COUNT )
@@ -27,12 +27,9 @@
         Shop_BuyButtonWithIcon( 1, ICON_MW3, "weapons_pistols_1" );
         Shop_BuyButtonWithIcon( 2, ICON_MW3, "weapons_pistols_2" );
         Shop_BuyButtonWithIcon( 3, ICON_MW3, "weapons_pistols_3" );
-        Shop_BuyButtonWithIcon( 4, ICON_MW3, "weapons_pistols_4" );
-        Shop_BuyButtonWithIcon( 5, ICON_MW3, "weapons_pistols_5" );
+        Shop_BuyButtonWithIcon( 4, ICON_MW2, "weapons_pistols_4" );
+        Shop_BuyButtonWithIcon( 5, ICON_MW2, "weapons_pistols_5" );
         Shop_BuyButtonWithIcon( 6, ICON_MW2, "weapons_pistols_6" );
-        Shop_BuyButtonWithIcon( 7, ICON_MW2, "weapons_pistols_7" );
-        Shop_BuyButtonWithIcon( 8, ICON_MW2, "weapons_pistols_8" );
-        Shop_BuyButtonWithIcon( 9, ICON_MW2, "weapons_pistols_9" );
-        Shop_End( 10 );
+        Shop_End( 7 );
     }
 }

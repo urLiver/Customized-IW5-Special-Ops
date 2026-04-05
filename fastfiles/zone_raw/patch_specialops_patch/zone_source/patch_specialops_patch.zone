@@ -6,6 +6,7 @@ menulist,ui_mp/custom_menus.txt
 
 stringtable,sp/survival_armories.csv
 stringtable,sp/icon_armories.csv
+stringtable,sp/weapon_upgrades.csv
 
 scriptfile,137
 
