@@ -930,21 +930,6 @@ sound,weap_kriss_new_fire_plr
 sound,weap_kriss_new_fire_npc
 weapon,iw4_kriss_mp
 
-sound,weap_m240_new_fire_plr
-sound,weap_m240_new_fire_npc
-
-weapon,iw4_m1014_mp
-
-fx,,muzzleflashes/usp_flash_view
-fx,,muzzleflashes/beretta_flash_wv_a
-fx,,muzzleflashes/beretta_flash_wv_b
-fx,,muzzleflashes/beretta_flash_wv_c
-fx,,muzzleflashes/beretta_flash_wv
-tracer,,pistol
-sound,weap_m9_new_fire_plr
-sound,weap_m9_new_fire_npc
-weapon,iw4_beretta_mp
-
 fx,,muzzleflashes/mp5_flshview_a
 fx,,muzzleflashes/mp5_flshview_b
 fx,,muzzleflashes/mp5_flash_view
@@ -1031,13 +1016,6 @@ weapon,iw4_ak47_mp
 fx,,muzzleflashes/beretta_flash_view
 weapon,iw4_beretta393_mp
 
-xanim,,viewmodel_coltanaconda_ADS_fire
-xanim,,viewmodel_coltanaconda_ADS_up
-xanim,,viewmodel_coltanaconda_ADS_down
-sound,weap_anaconda_new_fire_plr
-sound,weap_anaconda_new_fire_npc
-weapon,iw4_coltanaconda_mp
-
 sound,weap_fnfal_new_fire_plr
 sound,weap_fnfal_new_fire_npc
 weapon,iw4_fal_mp
@@ -1050,7 +1028,6 @@ weapon,iw4_m4_mp
 sound,weap_mg4_new_fire_plr
 sound,weap_mg4_new_fire_npc
 weapon,iw4_mg4_mp
-
 
 xanim,viewmodel_model1887_classic_sprint_in
 xanim,viewmodel_model1887_classic_sprint_loop

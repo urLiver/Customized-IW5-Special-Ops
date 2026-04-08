@@ -1,7 +1,7 @@
 #include "ui_mp/_style.inc"
 
 #define CURRENT_MENU "survival_armory_weapon_shotgun"
-#define OPTION_COUNT 8
+#define OPTION_COUNT 7
 #define BASE_IDX 100
 
 #define MENU_POS _MENU_POS( OPTION_COUNT )
@@ -30,7 +30,6 @@
         Shop_BuyButtonWithIcon( 4, ICON_MW2, "weapons_sg_4" );
         Shop_BuyButtonWithIcon( 5, ICON_MW2, "weapons_sg_5" );
         Shop_BuyButtonWithIcon( 6, ICON_MW2, "weapons_sg_6" );
-        Shop_BuyButtonWithIcon( 7, ICON_MW2, "weapons_sg_7" );
-        Shop_End( 8 );
+        Shop_End( 7 );
     }
 }

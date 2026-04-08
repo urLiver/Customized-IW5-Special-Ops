@@ -2,6 +2,8 @@
 
 >name,patch_survival
 
+ignore,ignores
+
 image,~russian_president_upper_body~f858c354
 image,russian_president_upper_body_nml
 image,russian_president_upper_body_dirty_col
@@ -59,8 +61,6 @@ menulist,ui/scriptmenus/so_survival_dvar_reset.menu
 menulist,ui_mp/custom_menus.txt
 
 scriptfile,1571
-
-ignore,common
 
 include,weapon_list
 include,patch_survival

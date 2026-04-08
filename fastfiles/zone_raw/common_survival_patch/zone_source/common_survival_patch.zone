@@ -4,6 +4,8 @@
 
 scriptfile,1574
 
+ignore,ignores
+
 include,common_survival
 
 scriptfile,aitype/enemy_so_easy
@@ -61,6 +63,3 @@ material,rank_prestige_18
 material,rank_prestige_19
 
 stringtable,sp/survival_waves.csv
-
-ignore,common
-ignore,ignores

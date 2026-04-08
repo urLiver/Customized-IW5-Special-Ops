@@ -3,9 +3,8 @@ id,item_name,type,price,locationstring,locationstring_description,material,level
 1,iw5_usp45_mp,weapon,450,WEAPON_USP,,,0,,,1,pistol
 2,iw5_mp412_mp,weapon,450,WEAPON_MP412,,,0,,,1,pistol
 3,iw5_44magnum_mp,weapon,450,WEAPON_MAGNUM,,,0,,,1,pistol
-4,iw4_beretta_mp,weapon,450,WEAPON_BERETTA,,,0,,,1,pistol
-5,iw4_colt45_mp,weapon,450,WEAPON_COLT45,,,0,,,1,pistol
-6,iw4_beretta393_mp,weapon,450,WEAPON_BERETTA393,,,0,,,1,pistol
+4,iw4_colt45_mp,weapon,450,WEAPON_COLT45,,,0,,,1,pistol
+5,iw4_beretta393_mp,weapon,450,WEAPON_BERETTA393,,,0,,,1,pistol
 
 20,iw5_skorpion_mp,weapon,1250,WEAPON_SKORPION,,,0,,,1,machinepistol
 21,iw5_mp9_mp,weapon,1250,WEAPON_MP9,,,0,,,1,machinepistol
@@ -30,17 +29,16 @@ id,item_name,type,price,locationstring,locationstring_description,material,level
 65,iw4_rpd_mp,weapon,8500,WEAPON_RPD,,,0,,,1,lmg
 66,iw4_mg4_mp,weapon,8500,WEAPON_MG4,,,0,,,1,lmg
 
-80,iw5_m4_mp,weapon,3500,WEAPON_M4,,,0,,,1,assaultrifle
-81,iw4_m4_mp,weapon,3500,WEAPON_M4,,,0,,,1,assaultrifle
-82,iw5_m16_mp,weapon,3500,WEAPON_M16,,,0,,,1,assaultrifle
-83,iw4_scar_mp,weapon,3500,WEAPON_SCAR,,,0,,,1,assaultrifle
-84,iw5_acr_mp,weapon,3500,WEAPON_ACR,,,0,,,1,assaultrifle
-85,iw4_ak47_mp,weapon,3500,WEAPON_AK47,,,0,,,1,assaultrifle
-86,iw5_fad_mp,weapon,3500,WEAPON_FAD,,,0,,,1,assaultrifle
-87,iw5_g36c_mp,weapon,3500,WEAPON_G36,,,0,,,1,assaultrifle
-88,iw5_mk14_mp,weapon,3500,WEAPON_MK14,,,0,,,1,assaultrifle
-89,iw5_type95_mp,weapon,3500,WEAPON_TYPE95,,,0,,,1,assaultrifle
-90,iw4_fal_mp,weapon,3500,WEAPON_FAL,,,0,,,1,assaultrifle
+80,iw4_m4_mp,weapon,3500,WEAPON_M4,,,0,,,1,assaultrifle
+81,iw5_m16_mp,weapon,3500,WEAPON_M16,,,0,,,1,assaultrifle
+82,iw4_scar_mp,weapon,3500,WEAPON_SCAR,,,0,,,1,assaultrifle
+83,iw5_acr_mp,weapon,3500,WEAPON_ACR,,,0,,,1,assaultrifle
+84,iw4_ak47_mp,weapon,3500,WEAPON_AK47,,,0,,,1,assaultrifle
+85,iw5_fad_mp,weapon,3500,WEAPON_FAD,,,0,,,1,assaultrifle
+86,iw5_g36c_mp,weapon,3500,WEAPON_G36,,,0,,,1,assaultrifle
+87,iw5_mk14_mp,weapon,3500,WEAPON_MK14,,,0,,,1,assaultrifle
+88,iw5_type95_mp,weapon,3500,WEAPON_TYPE95,,,0,,,1,assaultrifle
+89,iw4_fal_mp,weapon,3500,WEAPON_FAL,,,0,,,1,assaultrifle
 
 100,iw4_model1887_mp,weapon,2000,WEAPON_MODEL1887,,,0,,,1,shotgun
 101,iw5_usas12_mp,weapon,2000,WEAPON_USAS12,,,0,,,1,shotgun
@@ -49,7 +47,6 @@ id,item_name,type,price,locationstring,locationstring_description,material,level
 104,iw4_ranger_mp,weapon,2000,WEAPON_RANGER,,,0,,,1,shotgun
 105,iw4_striker_mp,weapon,4000,WEAPON_STRIKER,,,0,,,1,shotgun
 106,iw4_aa12_mp,weapon,5000,WEAPON_AA12,,,0,,,1,shotgun
-107,iw4_m1014_mp,weapon,6000,WEAPON_M1014,,,0,,,1,shotgun
 
 190,partial_ammo,weapon,750,SO_SURVIVAL_PARTIAL_AMMO_REFILL,,,0,,0 0,0,
 191,ammo,weapon,1500,SO_SURVIVAL_AMMO_REFILL,,,0,,0 0,0,
