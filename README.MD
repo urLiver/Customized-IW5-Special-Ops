@@ -1,3 +1,5 @@
+## Notice: Doesnt work on the newest mw3 version as it was made for the 32 bit version of cod.
+
 Small Project to bring some more fun and longevity into the IW5 Special Ops Gamemode
 
 ## Guides
